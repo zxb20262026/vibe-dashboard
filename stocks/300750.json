@@ -3,7 +3,7 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-06-14 21:40:57"
+    "generated_at": "2026-06-15 00:34:16"
   },
   "quote": {
     "name": "宁德时代",
@@ -802,11 +802,44 @@
   "fund_flow": null,
   "news": null,
   "peg": {
-    "value": 1.31,
-    "growth_assumption": 17.7,
-    "signal": "🟡 合理",
-    "color": "#d29922"
+    "value": 0.7,
+    "growth_assumption": 32.9,
+    "signal": "🟢 低估",
+    "color": "#3fb950",
+    "source": "analyst_consensus",
+    "actual_eps": 15.605597630206,
+    "forecast_eps": 20.73535483871
   },
+  "analyst_eps": [
+    {
+      "year": 2025,
+      "mark": "A",
+      "eps": 15.605597630206,
+      "pe": 25.30181858,
+      "roe": 24.91
+    },
+    {
+      "year": 2026,
+      "mark": "E",
+      "eps": 20.73535483871,
+      "pe": 19.258817124555,
+      "roe": 23.808333333333
+    },
+    {
+      "year": 2027,
+      "mark": "E",
+      "eps": 25.629387096774,
+      "pe": 15.5920665775,
+      "roe": 24.773666666667
+    },
+    {
+      "year": 2028,
+      "mark": "E",
+      "eps": 30.830466666667,
+      "pe": 12.96327065508,
+      "roe": 24.890344827586
+    }
+  ],
   "ma_deviation": {
     "ma5": 0.8,
     "ma20": -3.5,
