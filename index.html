@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>🧬 Vibe-Trading 统一看板</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei","PingFang SC",sans-serif;background:#0a0e17;color:#e6edf3;line-height:1.5;padding:16px;min-height:100vh}
+.wrap{max-width:900px;margin:0 auto}
+
+.header{background:linear-gradient(135deg,#0a1628,#0f3460 40%,#16213e 70%,#0a0e17);border:1px solid #1e3a5f;border-radius:16px;padding:32px 20px 24px;margin-bottom:16px;text-align:center;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 30%,rgba(63,185,80,0.08),transparent 50%),radial-gradient(circle at 70% 70%,rgba(88,166,255,0.06),transparent 50%);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:0.6}50%{opacity:1}}
+.header h1{font-size:1.8em;font-weight:700;position:relative;z-index:1;letter-spacing:1px}
+.header .sub{color:#8b949e;font-size:0.85em;margin-top:6px;position:relative;z-index:1}
+
+.nav-bar{display:flex;justify-content:center;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.nav-btn{font-size:0.72em;padding:5px 14px;border-radius:14px;background:#131a26;border:1px solid #1e2d45;color:#8b949e;text-decoration:none;transition:all .2s}
+.nav-btn:hover{border-color:#58a6ff;color:#58a6ff}
+.nav-btn.active{border-color:#3fb950;color:#3fb950;background:rgba(63,185,80,0.1)}
+
+.input-bar{display:flex;gap:10px;margin-bottom:20px;align-items:center;flex-wrap:wrap}
+.input-bar input{flex:1;min-width:200px;padding:12px 18px;border-radius:12px;border:1px solid #1e3a5f;background:#131a26;color:#e6edf3;font-size:0.95em;outline:none;transition:border .2s}
+.input-bar input:focus{border-color:#58a6ff;box-shadow:0 0 0 3px rgba(88,166,255,0.1)}
+.input-bar button{padding:12px 24px;border-radius:12px;background:linear-gradient(135deg,#1e3a5f,#0f3460);color:#58a6ff;border:1px solid #58a6ff;font-size:0.95em;font-weight:600;cursor:pointer;transition:all .2s}
+.input-bar button:hover{background:#58a6ff;color:#0a0e17}
+
+.quick-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;justify-content:center}
+.quick-tag{padding:6px 14px;border-radius:16px;border:1px solid #1e2d45;font-size:0.75em;color:#8b949e;cursor:pointer;transition:all .2s;text-decoration:none;background:#131a26}
+.quick-tag:hover{border-color:#58a6ff;color:#58a6ff;background:rgba(88,166,255,0.05)}
+
+.recent-section{margin-bottom:20px}
+.recent-section h2{font-size:0.9em;color:#8b949e;margin-bottom:10px;font-weight:500}
+.stock-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.stock-card{background:#131a26;border:1px solid #1e2d45;border-radius:10px;padding:16px;text-decoration:none;color:#e6edf3;transition:all .2s;display:block}
+.stock-card:hover{border-color:#58a6ff;transform:translateY(-2px)}
+.stock-card .sc-name{font-size:0.95em;font-weight:600;margin-bottom:4px}
+.stock-card .sc-price{font-size:1.3em;font-weight:700;margin-bottom:4px}
+.stock-card .sc-meta{font-size:0.72em;color:#8b949e;line-height:1.4}
+
+.dim-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-bottom:20px}
+.dim-card{background:rgba(255,255,255,0.02);border:1px solid #1e2d45;border-radius:8px;padding:14px;text-align:center}
+.dim-card .dim-icon{font-size:1.5em;margin-bottom:6px}
+.dim-card .dim-name{font-size:0.78em;color:#e6edf3;font-weight:600}
+.dim-card .dim-desc{font-size:0.65em;color:#6e7681;margin-top:2px}
+
+.footer{text-align:center;padding:30px 0;color:#484f58;font-size:0.7em;line-height:1.8}
+
+@media(max-width:600px){
+  body{padding:10px}
+  .header h1{font-size:1.4em}
+  .input-bar{flex-direction:column}
+  .stock-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="nav-bar">
+    <a class="nav-btn" href="https://zxb20262026.github.io/300750/">🔋 宁德时代</a>
+    <a class="nav-btn" href="https://zxb20262026.github.io/600900/">💧 长江电力</a>
+    <a class="nav-btn" href="https://zxb20262026.github.io/00700/">🐧 腾讯控股</a>
+    <a class="nav-btn" href="https://zxb20262026.github.io/sh300-etf-dashboard/">🎯 ETF雷达</a>
+    <a class="nav-btn active" href="index.html">🧬 统一看板</a>
+</div>
+
+<div class="header">
+    <h1>🧬 Vibe-Trading 统一分析看板</h1>
+    <div class="sub">任意A股/港股 → 7维度深度分析 · 量化因子 · 相关性 · 情绪评分</div>
+    <div class="sub" style="margin-top:4px;color:#58a6ff">Powered by Vibe-Trading 分析框架 · Alpha Zoo · Multi-Agent</div>
+</div>
+
+<div class="input-bar">
+    <input type="text" id="stockInput" placeholder="输入股票代码 (如 300750 / 00700 / 600900)">
+    <button onclick="analyze()">🔍 开始分析</button>
+</div>
+
+<div class="quick-tags">
+    <a class="quick-tag" href="stocks/300750.html">🔋 CATL · 300750</a>
+    <a class="quick-tag" href="stocks/600900.html">💧 长江电力 · 600900</a>
+    <a class="quick-tag" href="stocks/00700.html">🐧 腾讯控股 · 00700</a>
+    <a class="quick-tag" href="stocks/000001.html">🏦 平安银行 · 000001</a>
+    <a class="quick-tag" href="stocks/600519.html">🍶 贵州茅台 · 600519</a>
+    <a class="quick-tag" href="stocks/002594.html">🚗 比亚迪 · 002594</a>
+    <a class="quick-tag" href="stocks/601318.html">🔰 中国平安 · 601318</a>
+    <a class="quick-tag" href="stocks/300124.html">🤖 汇川技术 · 300124</a>
+</div>
+
+<div class="recent-section">
+    <h2>📊 7维度分析框架</h2>
+    <div class="dim-grid">
+        <div class="dim-card"><div class="dim-icon">📊</div><div class="dim-name">概览仪表盘</div><div class="dim-desc">KPI卡片+信号摘要</div></div>
+        <div class="dim-card"><div class="dim-icon">🧮</div><div class="dim-name">估值分析</div><div class="dim-desc">PE Bands+PEG+DCF</div></div>
+        <div class="dim-card"><div class="dim-icon">📈</div><div class="dim-name">技术面</div><div class="dim-desc">MA/MACD/RSI+图表</div></div>
+        <div class="dim-card"><div class="dim-icon">🔬</div><div class="dim-name">量化因子</div><div class="dim-desc">动量+价值+质量评分</div></div>
+        <div class="dim-card"><div class="dim-icon">🔥</div><div class="dim-name">相关性</div><div class="dim-desc">大盘联动+波动率+回撤</div></div>
+        <div class="dim-card"><div class="dim-icon">💰</div><div class="dim-name">资金面</div><div class="dim-desc">主力流向+成交量</div></div>
+        <div class="dim-card"><div class="dim-icon">📰</div><div class="dim-name">资讯情绪</div><div class="dim-desc">新闻聚合+NLP评分</div></div>
+    </div>
+</div>
+
+<div class="recent-section">
+    <h2>📌 最近分析</h2>
+    <div class="stock-grid">
+        <a class="stock-card" href="stocks/300750.html">
+            <div class="sc-name">🔋 宁德时代</div>
+            <div class="sc-price" style="color:#58a6ff">300750.SZ</div>
+            <div class="sc-meta">量化综合: 40 · 🟠 偏空<br>PE=23.1x PEG=0.58</div>
+        </a>
+        <a class="stock-card" href="stocks/600900.html">
+            <div class="sc-name">💧 长江电力</div>
+            <div class="sc-price" style="color:#58a6ff">600900.SH</div>
+            <div class="sc-meta">量化综合: 63 · 🟡 中性<br>PE=19.2x 波动12.4%</div>
+        </a>
+        <a class="stock-card" href="stocks/00700.html">
+            <div class="sc-name">🐧 腾讯控股</div>
+            <div class="sc-price" style="color:#58a6ff">00700.HK</div>
+            <div class="sc-meta">量化综合: 49 · 🟠 偏空<br>PE=17.0x 回撤31.7%</div>
+        </a>
+    </div>
+</div>
+
+<div class="footer">
+    🤖 Vibe-Trading 统一分析看板 v1.0<br>
+    数据源: 新浪/腾讯/东方财富 · Alpha Zoo 量化因子 · Multi-Agent 情绪分析<br>
+    ⚠️ 仅供参考 不构成投资建议
+</div>
+
+</div>
+
+<script>
+function analyze() {
+    var code = document.getElementById('stockInput').value.trim();
+    if (!code) return;
+    code = code.replace(/[^0-9a-zA-Z]/g,'');
+    window.location.href = 'stocks/' + code + '.html';
+}
+document.getElementById('stockInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') analyze();
+});
+</script>
+</body>
+</html>
