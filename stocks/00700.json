@@ -3,7 +3,7 @@
     "code": "00700",
     "market": "港股",
     "api_code": "hk00700",
-    "generated_at": "2026-06-14 21:43:31"
+    "generated_at": "2026-06-15 00:34:23"
   },
   "quote": {
     "name": "腾讯控股",
@@ -805,7 +805,8 @@
     "value": 1.84,
     "growth_assumption": 9.2,
     "signal": "🔴 偏高",
-    "color": "#f85149"
+    "color": "#f85149",
+    "source": "roe_estimation"
   },
   "ma_deviation": {
     "ma5": 1.1,
