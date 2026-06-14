@@ -35,13 +35,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei","PingFang SC
 .nav-btn:hover{border-color:#58a6ff;color:#58a6ff}
 .nav-btn.active{border-color:#58a6ff;color:#58a6ff;background:rgba(88,166,255,0.1)}
 
-/* ── Tab 切换 ── */
-.tab-bar{display:flex;gap:4px;margin-bottom:14px;overflow-x:auto;padding-bottom:4px}
-.tab-btn{padding:8px 16px;border-radius:8px 8px 0 0;border:1px solid transparent;font-size:0.78em;color:#8b949e;cursor:pointer;white-space:nowrap;transition:all .2s;background:transparent}
-.tab-btn:hover{color:#c9d1d9;background:rgba(255,255,255,0.03)}
-.tab-btn.active{color:#58a6ff;border-color:#1e2d45;border-bottom-color:#0a0e17;background:#131a26;font-weight:600}
-.tab-content{display:none}
-.tab-content.active{display:block}
+/* ── 分区标题 ── */
+.section-divider{display:flex;align-items:center;gap:10px;margin:20px 0 12px;padding-bottom:10px;border-bottom:1px solid #1e2d45}
+.section-divider .sd-icon{font-size:1.1em}
+.section-divider .sd-title{font-size:0.95em;font-weight:600;color:#58a6ff}
+.section-divider .sd-line{flex:1;height:1px;background:#1e2d45}
 
 /* ── KPI 网格 ── */
 .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin-bottom:14px}
@@ -103,7 +101,6 @@ td.center{text-align:center}
   body{padding:10px}
   .kpi-grid{grid-template-columns:repeat(2,1fr)}
   .factor-grid{grid-template-columns:repeat(2,1fr)}
-  .tab-btn{padding:6px 10px;font-size:0.7em}
   .input-bar{flex-direction:column}
 }
 </style>
@@ -133,14 +130,12 @@ td.center{text-align:center}
         <span class="quick-tag" onclick="location.href='stocks/600519.html'">茅台</span>
     </div>
 </div>
-<div class="tab-bar"><button class="tab-btn active" data-tab="tab1" onclick="switchTab('tab1')">📊 概览</button>
-<button class="tab-btn" data-tab="tab2" onclick="switchTab('tab2')">🧮 估值</button>
-<button class="tab-btn" data-tab="tab3" onclick="switchTab('tab3')">📈 技术</button>
-<button class="tab-btn" data-tab="tab4" onclick="switchTab('tab4')">🔬 因子</button>
-<button class="tab-btn" data-tab="tab5" onclick="switchTab('tab5')">🔥 相关</button>
-<button class="tab-btn" data-tab="tab6" onclick="switchTab('tab6')">💰 资金</button>
-<button class="tab-btn" data-tab="tab7" onclick="switchTab('tab7')">📰 资讯</button></div>
-<div class="tab-content active" id="tab1"><div class="kpi-grid">
+<div class="section-divider">
+    <span class="sd-icon">📊</span>
+    <span class="sd-title">概览仪表盘</span>
+    <span class="sd-line"></span>
+</div>
+<div class="kpi-grid">
     <div class="kpi-card"><div class="kpi-label">最新价</div><div class="kpi-value" style="color:#f85149">¥28.28</div><div class="kpi-change" style="color:#f85149">+1.40%</div><div class="kpi-note">开盘 ¥27.77</div></div>
     <div class="kpi-card"><div class="kpi-label">PE(TTM)</div><div class="kpi-value" style="color:#58a6ff">19.2</div><div class="kpi-note">PB 3.0x</div></div>
     <div class="kpi-card"><div class="kpi-label">PEG</div><div class="kpi-value" style="color:#f85149">1.51</div><div class="kpi-change" style="color:#f85149">🔴 偏高</div><div class="kpi-note">增长假设 12.7%</div></div>
@@ -161,8 +156,13 @@ td.center{text-align:center}
         <div><span style="color:#8b949e">质量:</span> <b>66</b></div>
     </div>
     <p style="margin-top:10px;font-size:0.78em;color:#c9d1d9;line-height:1.6">PEG=1.51 合理/偏高 · 突破MA20 · MACD金叉</p>
-</div></div>
-<div class="tab-content" id="tab2"><div class="module">
+</div>
+<div class="section-divider">
+    <span class="sd-icon">🧮</span>
+    <span class="sd-title">估值分析</span>
+    <span class="sd-line"></span>
+</div>
+<div class="module">
     <div class="module-hdr"><span class="icon">📏</span><h2>PE Bands 估值区间</h2></div>
     <table><tr><th>情景</th><th>PE</th><th>目标价(基于EPS ¥2.2)</th></tr><tr><td>清仓</td><td>15x</td><td style="font-weight:600">33.3</td></tr>
 <tr><td>止损</td><td>18x</td><td style="font-weight:600">40.0</td></tr>
@@ -188,8 +188,13 @@ td.center{text-align:center}
         PEG=1.51 · 增长假设12.7% · 🔴 偏高
     </div>
     
-</div></div>
-<div class="tab-content" id="tab3">
+</div>
+<div class="section-divider">
+    <span class="sd-icon">📈</span>
+    <span class="sd-title">技术面</span>
+    <span class="sd-line"></span>
+</div>
+
     <div class="factor-grid" style="grid-template-columns:repeat(4,1fr)">
         <div class="factor-card"><div class="f-name">MA5</div><div class="f-score" style="font-size:1.3em;color:#3fb950">站上MA5</div><div class="f-detail">27.80</div></div>
         <div class="factor-card"><div class="f-name">MA20</div><div class="f-score" style="font-size:1.3em;color:#3fb950">站上MA20</div><div class="f-detail">27.41</div></div>
@@ -203,29 +208,34 @@ td.center{text-align:center}
     <ul style="list-style:none;font-size:0.8em;line-height:1.8"><li><span style="color:#3fb950">✅ 站上MA60(27.07)，中长期趋势偏强</span></li>
 <li><span style="color:#f85149">RSI=81.6，超买区域</span></li>
 <li><span style="color:#3fb950">MACD金叉，短线偏多</span></li></ul>
-</div></div>
-<div class="tab-content" id="tab4"><div class="factor-grid">
+</div>
+<div class="section-divider">
+    <span class="sd-icon">🔬</span>
+    <span class="sd-title">量化因子</span>
+    <span class="sd-line"></span>
+</div>
+<div class="factor-grid">
     <div class="factor-card">
     <div class="f-name">📈 动量因子</div>
-    <canvas id="gauge-mom" width="80" height="80" class="factor-gauge"></canvas>
+    <canvas id="gauge-mom" width="80" height="80" class="factor-gauge" data-score="71"></canvas>
     <div style="font-size:1.3em;font-weight:700;color:#3fb950">71</div>
     <div class="f-detail">5日 +2.43%<br>20日 +4.62%</div>
 </div>
     <div class="factor-card">
     <div class="f-name">💰 价值因子</div>
-    <canvas id="gauge-val" width="80" height="80" class="factor-gauge"></canvas>
+    <canvas id="gauge-val" width="80" height="80" class="factor-gauge" data-score="52"></canvas>
     <div style="font-size:1.3em;font-weight:700;color:#d29922">52</div>
     <div class="f-detail">PE 19.2x<br>PB 3.0x<br>PEG 1.51</div>
 </div>
     <div class="factor-card">
     <div class="f-name">🏆 质量因子</div>
-    <canvas id="gauge-qual" width="80" height="80" class="factor-gauge"></canvas>
+    <canvas id="gauge-qual" width="80" height="80" class="factor-gauge" data-score="66"></canvas>
     <div style="font-size:1.3em;font-weight:700;color:#d29922">66</div>
     <div class="f-detail">ROE 15.8%</div>
 </div>
     <div class="factor-card">
     <div class="f-name">🧬 综合评分</div>
-    <canvas id="gauge-comp" width="80" height="80" class="factor-gauge"></canvas>
+    <canvas id="gauge-comp" width="80" height="80" class="factor-gauge" data-score="63"></canvas>
     <div style="font-size:1.3em;font-weight:700;color:#d29922">63</div>
     <div class="f-detail">🟡 中性</div>
 </div>
@@ -243,8 +253,12 @@ td.center{text-align:center}
         <p style="margin-top:8px;color:#6e7681">评分范围 0-100，≥70偏多，50-70中性，<50偏空</p>
     </div>
 </div>
-<script>setTimeout(function(){drawGauge('gauge-mom',71);drawGauge('gauge-val',52);drawGauge('gauge-qual',66);drawGauge('gauge-comp',63);},200);</script></div>
-<div class="tab-content" id="tab5"><div class="module">
+<div class="section-divider">
+    <span class="sd-icon">🔥</span>
+    <span class="sd-title">相关性</span>
+    <span class="sd-line"></span>
+</div>
+<div class="module">
     <div class="module-hdr"><span class="icon">🔥</span><h2>相关性分析</h2></div>
     <div class="corr-bar">
     <span class="cb-label">上证指数</span>
@@ -262,8 +276,13 @@ td.center{text-align:center}
         <div class="kpi-card"><div class="kpi-label">年化波动率</div><div class="kpi-value" style="color:#d29922">12.4%</div><div class="kpi-note">近90日日收益标准差年化</div></div>
         <div class="kpi-card"><div class="kpi-label">最大回撤(90日)</div><div class="kpi-value" style="color:#f85149">4.1%</div><div class="kpi-note">低风险</div></div>
     </div>
-</div></div>
-<div class="tab-content" id="tab6"><div class="module">
+</div>
+<div class="section-divider">
+    <span class="sd-icon">💰</span>
+    <span class="sd-title">资金面</span>
+    <span class="sd-line"></span>
+</div>
+<div class="module">
     <div class="module-hdr"><span class="icon">💰</span><h2>主力资金流向</h2></div>
     <table><tr><th>日期</th><th>主力净流入(亿)</th></tr><tr><td colspan="2" style="color:#8b949e">暂无主力资金数据 (港股或数据源不可用)</td></tr></table>
 </div>
@@ -273,14 +292,20 @@ td.center{text-align:center}
         <div class="kpi-card"><div class="kpi-label">成交额</div><div class="kpi-value">41.9亿</div></div>
         <div class="kpi-card"><div class="kpi-label">成交量</div><div class="kpi-value">14942.45万手</div></div>
     </div>
-</div></div>
-<div class="tab-content" id="tab7"><div class="module">
+</div>
+<div class="section-divider">
+    <span class="sd-icon">📰</span>
+    <span class="sd-title">资讯情绪</span>
+    <span class="sd-line"></span>
+</div>
+<div class="module">
     <div class="module-hdr"><span class="icon">📰</span><h2>资讯情绪</h2></div>
     <div class="signal-box neutral" style="margin-bottom:12px">
         📊 情绪评分: <b style="color:#d29922">+0</b> / 100 · 0条新闻
     </div>
     <p style="color:#8b949e;font-size:0.8em;padding:16px">暂无新闻数据</p>
-</div></div>
+</div>
+
 <div class="footer">
     🤖 Vibe-Trading 统一看板 v1.0 · 数据: 新浪/腾讯/东方财富<br>
     2026-06-14 21:43:36 · 7维度分析<br>
@@ -288,13 +313,6 @@ td.center{text-align:center}
 </div>
 </div>
 <script>
-function switchTab(tabId) {
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-    document.querySelector('[data-tab="'+tabId+'"]').classList.add('active');
-    document.getElementById(tabId).classList.add('active');
-    if (tabId === 'tab3') drawTechChart();
-}
 function analyzeStock() {
     var code = document.getElementById('stockInput').value.trim();
     if (!code) return;
@@ -303,6 +321,19 @@ function analyzeStock() {
 }
 document.getElementById('stockInput').addEventListener('keydown', function(e) {
     if (e.key === 'Enter') analyzeStock();
+});
+
+// 页面加载后自动绘制图表
+window.addEventListener('DOMContentLoaded', function() {
+    drawTechChart();
+    setTimeout(function() {
+        ['gauge-mom','gauge-val','gauge-qual','gauge-comp'].forEach(function(id) {
+            var el = document.getElementById(id);
+            if (el && el.getAttribute('data-score')) {
+                drawGauge(id, parseInt(el.getAttribute('data-score')));
+            }
+        });
+    }, 100);
 });
 
 // SVG技术图表
