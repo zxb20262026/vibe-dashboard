@@ -174,6 +174,25 @@ tr:last-child td{border-bottom:0}
 
 .footer{margin-top:24px;color:var(--dim);text-align:center;font-size:12px}
 
+/* 整体总结卡片 */
+.summary-box{border:1px solid rgba(32,213,232,.22);border-radius:10px;padding:20px 22px;margin:16px 0;background:linear-gradient(135deg,rgba(32,213,232,.07),rgba(50,213,131,.03));line-height:1.75;font-size:14px}
+.summary-box h4{margin:0 0 12px;font-size:15px;color:var(--cyan);display:flex;align-items:center;gap:6px}
+.summary-box .hl{color:var(--green);font-weight:700}
+.summary-box .hl-a{color:var(--amber);font-weight:700}
+.summary-box .hl-r{color:var(--red);font-weight:700}
+.summary-box .hl-b{color:var(--blue);font-weight:700}
+.summary-box .hl-c{color:var(--cyan);font-weight:700}
+.summary-box .kv{display:inline-flex;gap:4px;align-items:baseline}
+.summary-box .kv span{color:var(--dim)}
+
+/* 小白解读 */
+.beginner-note{margin-top:14px;padding:12px 14px;border-left:3px solid var(--cyan);background:rgba(32,213,232,.05);border-radius:0 8px 8px 0;color:var(--muted);font-size:13px;line-height:1.7}
+.beginner-note strong{color:var(--cyan)}
+.beginner-note .hl{color:var(--green)}
+.beginner-note .hl-a{color:var(--amber)}
+.beginner-note .hl-r{color:var(--red)}
+.beginner-note .hl-b{color:var(--blue)}
+
 .green-text{color:var(--green)}
 .red-text{color:var(--red)}
 .amber-text{color:var(--amber)}
@@ -358,6 +377,120 @@ def build_hero(data):
 </section>'''
 
 
+def build_overall_summary(data):
+    """整体数据总结 — 面向投资小白"""
+    q = data.get("quote", {})
+    f = data.get("fundamentals", {})
+    peg = data.get("peg", {})
+    alpha = data.get("alpha_factors", {})
+    corr = data.get("correlation", {})
+    tech = data.get("tech", {})
+    
+    name = q.get("name", "宁德时代")
+    price = q.get("price", 0)
+    chg = q.get("change_pct", 0)
+    pe = f.get("pe_ttm")
+    pb = f.get("pb")
+    roe = f.get("roe")
+    peg_v = peg.get("value")
+    growth = peg.get("growth_assumption")
+    cap = f.get("market_cap", 0)
+    vol = corr.get("volatility_annual", 0)
+    dd = corr.get("max_drawdown_90d", 0)
+    comp = alpha.get("composite", {})
+    vibe = comp.get("score", 50)
+    qual = alpha.get("quality", {})
+    mom = alpha.get("momentum", {})
+    val = alpha.get("value", {})
+    ma5 = tech.get("ma5")
+    ma20 = tech.get("ma20")
+    signal = comp.get("signal", "")
+    
+    # 估值判断
+    if pe and pe < 20: val_judge = "偏低，处于历史低估区域"
+    elif pe and pe < 28: val_judge = "合理偏低，有一定安全边际"
+    elif pe and pe < 35: val_judge = "合理偏高"
+    else: val_judge = "偏高，注意估值风险"
+    
+    # PEG判断
+    if peg_v and peg_v < 0.8: peg_judge = "远低于1，说明当前估值相对增长预期非常便宜"
+    elif peg_v and peg_v < 1.2: peg_judge = "接近1，估值与增长基本匹配"
+    elif peg_v: peg_judge = "高于1，估值相对增长偏贵"
+    else: peg_judge = "数据待补充"
+    
+    # ROE判断
+    if roe and roe > 20: roe_judge = "优秀（行业顶尖水平）"
+    elif roe and roe > 15: roe_judge = "良好"
+    elif roe and roe > 10: roe_judge = "一般"
+    else: roe_judge = "偏低"
+    
+    # 波动判断
+    if vol and vol < 20: vol_judge = "较稳定"
+    elif vol and vol < 35: vol_judge = "中等偏大"
+    else: vol_judge = "较大，适合能承受波动的投资者"
+    
+    # 趋势判断
+    trend_text = ""
+    if ma5 and ma20:
+        if price > ma5 > ma20: trend_text = "短期均线在中期均线上方，价格处于上升趋势中"
+        elif price < ma5 < ma20: trend_text = "短期均线在中期均线下方，价格处于回调中"
+        else: trend_text = "短期与中期均线交织，方向不明确"
+    
+    # 综合信号文本
+    signal_text = {
+        "🟢 偏多": "量化因子偏向积极，短期机会大于风险",
+        "🟡 中性": "量化因子中性，适合持有观察",
+        "🟠 偏空": "量化因子偏谨慎，建议控制仓位等待信号",
+        "🔴 看空": "量化因子偏空，注意风险控制",
+    }.get(signal, "量化信号待观察")
+    
+    chg_sign = "+" if chg >= 0 else ""
+    chg_cls = "hl" if chg >= 0 else "hl-r"
+    
+    pe_cls = "hl" if pe and pe < 28 else ("hl-a" if pe and pe < 35 else "hl-r")
+    peg_cls = "hl" if peg_v and peg_v < 1 else ("hl-a" if peg_v and peg_v < 1.5 else "hl-r")
+    roe_cls = "hl" if roe and roe > 20 else ("hl-a" if roe and roe > 15 else "hl-r")
+    
+    vibe_cls = "hl" if vibe >= 55 else ("hl-a" if vibe >= 40 else "hl-r")
+    
+    # 一句话总结
+    if pe and pe < 28 and peg_v and peg_v < 1 and roe and roe > 20:
+        one_liner = f'{name}当前估值合理偏低、增长强劲、盈利能力优秀，属于"好公司+好价格"区间。但量化信号{signal}，'
+    else:
+        one_liner = f'{name}综合来看估值{val_judge}，量化信号{signal}，'
+    one_liner += '建议' + ('适合分批关注' if vibe >= 50 else '以持有观察为主，等待更明确的加仓信号') + '。'
+    
+    return f'''<section>
+<div class="summary-box">
+    <h4>📊 {name} · 今日数据全景</h4>
+    <p>
+        <strong>行情：</strong>{name}今日报收 <span class="hl-c">¥{fmt(price,2)}</span>，较前一日 <span class="{chg_cls}">{chg_sign}{fmt(chg,2)}%</span>。
+        总市值约 <span class="hl-c">{cap:.0f}亿</span>，日内最高 ¥{fmt(q.get('high'),2)} / 最低 ¥{fmt(q.get('low'),2)}。
+    </p>
+    <p>
+        <strong>估值：</strong>当前 PE(TTM) <span class="{pe_cls}">{fmt(pe,1)}倍</span> — {val_judge}。
+        PEG <span class="{peg_cls}">{fmt(peg_v,2)}</span>（基于分析师一致预期增速 <span class="hl-c">{fmt(growth,1)}%</span>）— {peg_judge}。
+        每股净资产对应的 PB 为 <span class="hl-c">{fmt(pb,1)}倍</span>。
+    </p>
+    <p>
+        <strong>基本面：</strong>ROE（净资产收益率）<span class="{roe_cls}">{fmt(roe,1)}%</span> — {roe_judge}。
+        这是衡量公司赚钱效率的核心指标，{roe_judge == '优秀（行业顶尖水平）' and f'{name}的赚钱能力在A股中名列前茅' or f'当前ROE处于{roe_judge}水平'}。
+    </p>
+    <p>
+        <strong>量化信号：</strong>Vibe综合评分 <span class="{vibe_cls}">{vibe}</span>/100（动量 <span class="hl-b">{mom.get('score',50)}</span> + 价值 <span class="hl-b">{val.get('score',50)}</span> + 质量 <span class="hl-b">{qual.get('score',50)}</span>）。
+        信号状态：<span class="{vibe_cls}">{signal}</span> — {signal_text}。
+    </p>
+    <p>
+        <strong>风险指标：</strong>近90日年化波动率 <span class="hl-a">{fmt(vol,1)}%</span>（{vol_judge}），
+        最大回撤 <span class="hl-a">{fmt(dd,1)}%</span>。{trend_text and '技术面：' + trend_text}
+    </p>
+    <p style="margin:10px 0 0;color:var(--dim);font-size:12px;border-top:1px solid var(--soft);padding-top:10px">
+        💡 <strong>一句话总结：</strong>{one_liner}
+    </p>
+</div>
+</section>'''
+
+
 def build_matrix(data):
     alpha = data.get("alpha_factors", {})
     corr = data.get("correlation", {})
@@ -414,6 +547,13 @@ def build_matrix(data):
             {bar_html}
             <div class="formula">综合分 = Vibe 40% + 估值吸引力 30% + 基本面质量 20% + 拥挤度反向 10%</div>
         </div>
+    </div>
+    <div class="beginner-note">
+        <strong>💡 小白怎么看这个矩阵？</strong><br>
+        这个图把"<span class="hl">估值便不便宜</span>"和"<span class="hl-a">市场情绪热不热</span>"放在一起看。
+        理想状态是左下角：估值便宜但市场还没热起来——这时候买入性价比最高。
+        宁德时代的气泡越靠近<strong>左下</strong>越值得关注，越靠近<strong>右上</strong>越需要谨慎。
+        右侧的进度条帮你快速判断：<strong>估值安全垫</strong>越高越好，<strong>拥挤度风险</strong>越低越好。
     </div>
 </section>'''
 
@@ -498,6 +638,13 @@ def build_chart_section(data):
             </div>
         </div>
     </div>
+    <div class="beginner-note">
+        <strong>💡 小白怎么看估值+Vibe趋势？</strong><br>
+        <strong>价格图</strong>告诉你过去60天股价的走势——不要只看今天涨跌，要看趋势。
+        <strong>Vibe因子拆解</strong>是帮你看"市场在关注什么"：<span class="hl">新闻热度</span>高说明大家讨论多，
+        <span class="hl-a">资金温度</span>高说明钱在流入，<span class="hl-b">估值安全</span>高说明不贵。
+        下面的信号表更实用——每个指标都有明确的<strong>阈值</strong>和对应的<strong>动作建议</strong>，直接告诉你该观察还是该行动。
+    </div>
 </section>'''
 
 
@@ -530,6 +677,13 @@ def build_peer_table(data):
             </table>
         </div>
     </div>
+    <div class="beginner-note">
+        <strong>💡 小白怎么看同行对比？</strong><br>
+        这张表把宁德时代和它的竞争对手放在一起比较。<strong>PE越低理论上越便宜</strong>，
+        但便宜的可能是"便宜没好货"——所以要看<strong>质量分</strong>（综合ROE、毛利率等）。
+        <span class="hl">估值性价比</span>这一列最关键：它把价格和质量放在一起算，告诉你谁是真的"物美价廉"。
+        标<span class="tag green">低估优质</span>的值得深入研究，标<span class="tag amber">叙事偏热</span>的可能是市场太乐观了。
+    </div>
 </section>'''
 
 
@@ -560,6 +714,13 @@ def build_playbook(data):
             <h4 class="red-text">基本面破坏</h4>
             <p>{'ROE' if roe else ''}市占率、毛利率、现金流连续恶化。动作：不以低PE补仓，重估长期逻辑。</p>
         </div>
+    </div>
+    <div class="beginner-note">
+        <strong>💡 小白怎么看交易剧本？</strong><br>
+        这四个象限是投资中最重要的四种状态。投资新手最容易犯的错是：
+        <span class="hl-r">高估火热</span>时追进去（FOMO），<span class="hl">低估冷清</span>时不敢买（恐慌）。
+        正确的做法恰恰相反——<strong>在市场冷清、估值便宜时慢慢买，在市场火热、估值偏贵时谨慎</strong>。
+        当前宁德时代处于哪个象限，就在对应的卡片上找答案。
     </div>
 </section>'''
 
@@ -617,6 +778,7 @@ def generate(data):
 {build_nav()}
 {build_header(data)}
 {build_hero(data)}
+{build_overall_summary(data)}
 {build_matrix(data)}
 {build_chart_section(data)}
 {build_peer_table(data)}
