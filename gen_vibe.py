@@ -230,7 +230,7 @@ def build_nav():
     <a class="nav-btn" href="https://zxb20262026.github.io/600900/">💧 长江电力</a>
     <a class="nav-btn" href="https://zxb20262026.github.io/00700/">🐧 腾讯控股</a>
     <a class="nav-btn" href="https://zxb20262026.github.io/sh300-etf-dashboard/">🎯 ETF雷达</a>
-    <a class="nav-btn active" href="https://zxb20262026.github.io/vibe-dashboard/">🧬 港大看板</a>
+    <a class="nav-btn active" href="https://zxb20262026.github.io/vibe-dashboard/stocks/300750_vibe.html">🧬 港大看板</a>
 </div>'''
 
 
