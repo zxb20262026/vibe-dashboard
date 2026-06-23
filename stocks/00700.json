@@ -3,7 +3,7 @@
     "code": "00700",
     "market": "港股",
     "api_code": "hk00700",
-    "generated_at": "2026-06-22 18:02:35"
+    "generated_at": "2026-06-23 08:01:40"
   },
   "quote": {
     "name": "腾讯控股",
@@ -19,7 +19,7 @@
   },
   "fundamentals": {
     "pe_ttm": 15.84,
-    "market_cap": 39437.9748,
+    "market_cap": 39438.1491,
     "roe": 11.53,
     "high_52w": 420.4,
     "low_52w": 1.39,
