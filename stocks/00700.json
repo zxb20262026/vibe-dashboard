@@ -3,7 +3,7 @@
     "code": "00700",
     "market": "港股",
     "api_code": "hk00700",
-    "generated_at": "2026-06-26 11:41:41"
+    "generated_at": "2026-06-29 08:02:02"
   },
   "quote": {
     "name": "腾讯控股",
@@ -12,7 +12,7 @@
     "open": 418.0,
     "high": 421.2,
     "low": 411.0,
-    "volume": 14335267,
+    "volume": 31872909,
     "amount": 0,
     "change": -9.6,
     "change_pct": -2.278
@@ -22,7 +22,7 @@
     "market_cap": 37507.5384,
     "roe": 11.53,
     "high_52w": 411.0,
-    "low_52w": 1.11,
+    "low_52w": 0.91,
     "div_yield": 0.0,
     "eps_ttm": 2.42
   },
@@ -32,8 +32,8 @@
     "ma60": 467.03,
     "rsi": 32.8,
     "macd": {
-      "dif": -10.857,
-      "dea": -6.259,
+      "dif": -10.855,
+      "dea": -6.257,
       "bar": -9.196,
       "signal": "bearish"
     },
@@ -756,7 +756,7 @@
         "close": 411.8,
         "high": 421.2,
         "low": 411.0,
-        "volume": 15451404.0
+        "volume": 31872909.0
       }
     ]
   },
@@ -787,17 +787,17 @@
     "correlations": [
       {
         "name": "恒生指数",
-        "correlation": 0.739,
-        "beta": 1.36
+        "correlation": 0.746,
+        "beta": 1.38
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.13,
+        "correlation": -0.131,
         "beta": 0
       }
     ],
-    "volatility_annual": 37.9,
-    "max_drawdown_90d": 26.5
+    "volatility_annual": 38.1,
+    "max_drawdown_90d": 26.3
   },
   "fund_flow": null,
   "news": null,
