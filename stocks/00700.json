@@ -3,23 +3,23 @@
     "code": "00700",
     "market": "港股",
     "api_code": "hk00700",
-    "generated_at": "2026-06-29 18:02:19"
+    "generated_at": "2026-06-30 08:01:41"
   },
   "quote": {
     "name": "腾讯控股",
-    "price": 421.4,
+    "price": 420.2,
     "prev_close": 411.8,
     "open": 417.0,
     "high": 432.0,
     "low": 415.0,
-    "volume": 30853370,
+    "volume": 33066070,
     "amount": 0,
-    "change": 9.6,
-    "change_pct": 2.331
+    "change": 8.4,
+    "change_pct": 2.04
   },
   "fundamentals": {
     "pe_ttm": 15.37,
-    "market_cap": 38272.6266,
+    "market_cap": 38273.0126,
     "roe": 11.53,
     "high_52w": 411.0,
     "low_52w": 0.93,
@@ -809,8 +809,8 @@
     "source": "roe_estimation"
   },
   "ma_deviation": {
-    "ma5": 0.5,
-    "ma20": -5.4,
-    "ma60": -9.5
+    "ma5": 0.2,
+    "ma20": -5.6,
+    "ma60": -9.8
   }
 }
