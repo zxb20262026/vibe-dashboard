@@ -3,7 +3,7 @@
     "code": "600900",
     "market": "A股",
     "api_code": "sh600900",
-    "generated_at": "2026-06-30 20:31:52"
+    "generated_at": "2026-07-01 08:01:54"
   },
   "quote": {
     "name": "长江电力",
@@ -792,7 +792,7 @@
       },
       {
         "name": "自相关(1日)",
-        "correlation": 0.045,
+        "correlation": 0.047,
         "beta": 0
       }
     ],
