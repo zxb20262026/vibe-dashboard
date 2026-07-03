@@ -3,7 +3,7 @@
     "code": "00700",
     "market": "港股",
     "api_code": "hk00700",
-    "generated_at": "2026-07-02 18:01:49"
+    "generated_at": "2026-07-03 08:02:14"
   },
   "quote": {
     "name": "腾讯控股",
@@ -12,7 +12,7 @@
     "open": 442.6,
     "high": 447.0,
     "low": 429.4,
-    "volume": 37569100,
+    "volume": 40905100,
     "amount": 0,
     "change": 0.4,
     "change_pct": 0.093
