@@ -3,7 +3,7 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-07-06 18:02:00"
+    "generated_at": "2026-07-07 08:02:01"
   },
   "quote": {
     "name": "宁德时代",
@@ -20,7 +20,7 @@
   "fundamentals": {
     "pe_ttm": 21.94,
     "pb": 5.3,
-    "market_cap": 17327.18,
+    "market_cap": 17327.27,
     "roe": 22.11,
     "high_52w": 0.62,
     "low_52w": 538.0,
@@ -32,9 +32,9 @@
     "ma60": 413.83,
     "rsi": 39.5,
     "macd": {
-      "dif": -8.047,
-      "dea": -6.447,
-      "bar": -3.2,
+      "dif": -8.046,
+      "dea": -6.445,
+      "bar": -3.202,
       "signal": "bearish"
     },
     "klines_90d": [
@@ -787,8 +787,8 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.387,
-        "beta": 0.96
+        "correlation": 0.393,
+        "beta": 0.98
       },
       {
         "name": "自相关(1日)",
@@ -796,7 +796,7 @@
         "beta": 0
       }
     ],
-    "volatility_annual": 39.5,
+    "volatility_annual": 39.6,
     "max_drawdown_90d": 18.6
   },
   "fund_flow": null,
@@ -807,36 +807,36 @@
     "signal": "🟢 低估",
     "color": "#3fb950",
     "source": "analyst_consensus",
-    "actual_eps": 15.605597630206,
+    "actual_eps": 15.605517720953,
     "forecast_eps": 20.73535483871
   },
   "analyst_eps": [
     {
       "year": 2025,
       "mark": "A",
-      "eps": 15.605597630206,
-      "pe": 23.9984401,
+      "eps": 15.605517720953,
+      "pe": 23.99856299,
       "roe": 24.91
     },
     {
       "year": 2026,
       "mark": "E",
       "eps": 20.73535483871,
-      "pe": 18.266733193155,
+      "pe": 18.266826729366,
       "roe": 23.808333333333
     },
     {
       "year": 2027,
       "mark": "E",
       "eps": 25.629387096774,
-      "pe": 14.788868820918,
+      "pe": 14.788944548457,
       "roe": 24.773666666667
     },
     {
       "year": 2028,
       "mark": "E",
       "eps": 30.830466666667,
-      "pe": 12.295490675026,
+      "pe": 12.295553635031,
       "roe": 24.890344827586
     }
   ],
