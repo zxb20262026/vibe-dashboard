@@ -3,7 +3,7 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-07-08 18:02:03"
+    "generated_at": "2026-07-09 08:01:42"
   },
   "quote": {
     "name": "宁德时代",
@@ -32,9 +32,9 @@
     "ma60": 413.27,
     "rsi": 33.6,
     "macd": {
-      "dif": -9.978,
-      "dea": -7.301,
-      "bar": -5.354,
+      "dif": -9.979,
+      "dea": -7.303,
+      "bar": -5.352,
       "signal": "bearish"
     },
     "klines_90d": [
@@ -774,7 +774,7 @@
       "peg": 1.2
     },
     "quality": {
-      "score": 48,
+      "score": 49,
       "roe": 22.11
     },
     "composite": {
@@ -787,27 +787,59 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.396,
+        "correlation": 0.405,
         "beta": 1.0
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.105,
+        "correlation": -0.118,
         "beta": 0
       }
     ],
-    "volatility_annual": 39.8,
+    "volatility_annual": 39.2,
     "max_drawdown_90d": 21.5
   },
   "fund_flow": null,
   "news": null,
   "peg": {
-    "value": 1.2,
-    "growth_assumption": 17.7,
-    "signal": "🟡 合理",
-    "color": "#d29922",
-    "source": "roe_estimation"
+    "value": 0.64,
+    "growth_assumption": 32.9,
+    "signal": "🟢 低估",
+    "color": "#3fb950",
+    "source": "analyst_consensus",
+    "actual_eps": 15.605517720953,
+    "forecast_eps": 20.73535483871
   },
+  "analyst_eps": [
+    {
+      "year": 2025,
+      "mark": "A",
+      "eps": 15.605517720953,
+      "pe": 23.13284355,
+      "roe": 24.91
+    },
+    {
+      "year": 2026,
+      "mark": "E",
+      "eps": 20.73535483871,
+      "pe": 17.607872818619,
+      "roe": 23.808333333333
+    },
+    {
+      "year": 2027,
+      "mark": "E",
+      "eps": 25.629387096774,
+      "pe": 14.255451074719,
+      "roe": 24.773666666667
+    },
+    {
+      "year": 2028,
+      "mark": "E",
+      "eps": 30.830466666667,
+      "pe": 11.852006254162,
+      "roe": 24.890344827586
+    }
+  ],
   "ma_deviation": {
     "ma5": -3.5,
     "ma20": -7.2,
