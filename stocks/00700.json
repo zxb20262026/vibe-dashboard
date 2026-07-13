@@ -3,38 +3,38 @@
     "code": "00700",
     "market": "港股",
     "api_code": "hk00700",
-    "generated_at": "2026-07-13 11:42:17"
+    "generated_at": "2026-07-13 18:03:14"
   },
   "quote": {
     "name": "腾讯控股",
-    "price": 461.4,
+    "price": 457.6,
     "prev_close": 460.2,
     "open": 463.2,
     "high": 473.8,
-    "low": 459.4,
-    "volume": 13269122,
+    "low": 456.2,
+    "volume": 24291842,
     "amount": 0,
-    "change": 1.2,
-    "change_pct": 0.261
+    "change": -2.6,
+    "change_pct": -0.565
   },
   "fundamentals": {
-    "pe_ttm": 16.82,
-    "market_cap": 41880.13,
+    "pe_ttm": 16.71,
+    "market_cap": 41607.3545,
     "roe": 11.53,
     "high_52w": 411.0,
-    "low_52w": 0.75,
+    "low_52w": 0.51,
     "div_yield": 0.0,
-    "eps_ttm": 3.13
+    "eps_ttm": 3.82
   },
   "tech": {
-    "ma5": 466.08,
-    "ma20": 442.99,
-    "ma60": 459.44,
-    "rsi": 60.2,
+    "ma5": 465.48,
+    "ma20": 442.84,
+    "ma60": 459.39,
+    "rsi": 59.0,
     "macd": {
-      "dif": 2.799,
-      "dea": -3.907,
-      "bar": 13.412,
+      "dif": 2.556,
+      "dea": -3.939,
+      "bar": 12.99,
       "signal": "bullish"
     },
     "klines_90d": [
@@ -753,64 +753,64 @@
       {
         "date": "2026-07-13",
         "open": 463.2,
-        "close": 460.6,
+        "close": 457.6,
         "high": 473.8,
-        "low": 459.4,
-        "volume": 14129844.0
+        "low": 456.2,
+        "volume": 24291842.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
-      "score": 57,
-      "mom_5d": 1.9,
-      "mom_20d": 0.74,
-      "mom_60d": -6.61
+      "score": 53,
+      "mom_5d": 1.24,
+      "mom_20d": 0.09,
+      "mom_60d": -7.22
     },
     "value": {
       "score": 52,
-      "pe": 16.82,
+      "pe": 16.71,
       "pb": 3,
-      "peg": 1.82
+      "peg": 1.81
     },
     "quality": {
-      "score": 36,
+      "score": 35,
       "roe": 11.53
     },
     "composite": {
-      "score": 50,
-      "signal": "🟡 中性",
-      "color": "#d29922"
+      "score": 48,
+      "signal": "🟠 偏空",
+      "color": "#f0883e"
     }
   },
   "correlation": {
     "correlations": [
       {
         "name": "恒生指数",
-        "correlation": 0.721,
+        "correlation": 0.719,
         "beta": 1.37
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.046,
+        "correlation": -0.043,
         "beta": 0
       }
     ],
-    "volatility_annual": 39.0,
+    "volatility_annual": 39.2,
     "max_drawdown_90d": 26.3
   },
   "fund_flow": null,
   "news": null,
   "peg": {
-    "value": 1.82,
+    "value": 1.81,
     "growth_assumption": 9.2,
     "signal": "🔴 偏高",
     "color": "#f85149",
     "source": "roe_estimation"
   },
   "ma_deviation": {
-    "ma5": -1.0,
-    "ma20": 4.2,
-    "ma60": 0.4
+    "ma5": -1.7,
+    "ma20": 3.3,
+    "ma60": -0.4
   }
 }
