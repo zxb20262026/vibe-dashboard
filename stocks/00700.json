@@ -3,49 +3,41 @@
     "code": "00700",
     "market": "港股",
     "api_code": "hk00700",
-    "generated_at": "2026-07-13 08:02:08"
+    "generated_at": "2026-07-13 11:42:17"
   },
   "quote": {
     "name": "腾讯控股",
-    "price": 460.2,
-    "prev_close": 469.6,
-    "open": 472.8,
-    "high": 473.6,
-    "low": 458.8,
-    "volume": 40440298,
+    "price": 461.4,
+    "prev_close": 460.2,
+    "open": 463.2,
+    "high": 473.8,
+    "low": 459.4,
+    "volume": 13269122,
     "amount": 0,
-    "change": -9.4,
-    "change_pct": -2.002
+    "change": 1.2,
+    "change_pct": 0.261
   },
   "fundamentals": {
-    "pe_ttm": 16.81,
-    "market_cap": 41843.76,
+    "pe_ttm": 16.82,
+    "market_cap": 41880.13,
     "roe": 11.53,
     "high_52w": 411.0,
-    "low_52w": 0.91,
+    "low_52w": 0.75,
     "div_yield": 0.0,
-    "eps_ttm": 3.15
+    "eps_ttm": 3.13
   },
   "tech": {
-    "ma5": 464.36,
-    "ma20": 442.82,
-    "ma60": 459.99,
-    "rsi": 57.0,
+    "ma5": 466.08,
+    "ma20": 442.99,
+    "ma60": 459.44,
+    "rsi": 60.2,
     "macd": {
-      "dif": 2.146,
-      "dea": -5.465,
-      "bar": 15.222,
+      "dif": 2.799,
+      "dea": -3.907,
+      "bar": 13.412,
       "signal": "bullish"
     },
     "klines_90d": [
-      {
-        "date": "2026-02-26",
-        "open": 529.0,
-        "close": 512.0,
-        "high": 529.5,
-        "low": 512.0,
-        "volume": 25547825.0
-      },
       {
         "date": "2026-02-27",
         "open": 510.5,
@@ -757,19 +749,27 @@
         "high": 473.6,
         "low": 458.8,
         "volume": 40440298.0
+      },
+      {
+        "date": "2026-07-13",
+        "open": 463.2,
+        "close": 460.6,
+        "high": 473.8,
+        "low": 459.4,
+        "volume": 14129844.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
-      "score": 65,
-      "mom_5d": 6.73,
-      "mom_20d": -1.16,
-      "mom_60d": -6.08
+      "score": 57,
+      "mom_5d": 1.9,
+      "mom_20d": 0.74,
+      "mom_60d": -6.61
     },
     "value": {
       "score": 52,
-      "pe": 16.81,
+      "pe": 16.82,
       "pb": 3,
       "peg": 1.82
     },
@@ -778,7 +778,7 @@
       "roe": 11.53
     },
     "composite": {
-      "score": 53,
+      "score": 50,
       "signal": "🟡 中性",
       "color": "#d29922"
     }
@@ -796,7 +796,7 @@
         "beta": 0
       }
     ],
-    "volatility_annual": 39.2,
+    "volatility_annual": 39.0,
     "max_drawdown_90d": 26.3
   },
   "fund_flow": null,
@@ -809,8 +809,8 @@
     "source": "roe_estimation"
   },
   "ma_deviation": {
-    "ma5": -0.9,
-    "ma20": 3.9,
-    "ma60": 0.0
+    "ma5": -1.0,
+    "ma20": 4.2,
+    "ma60": 0.4
   }
 }
