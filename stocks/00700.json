@@ -3,28 +3,28 @@
     "code": "00700",
     "market": "港股",
     "api_code": "hk00700",
-    "generated_at": "2026-07-15 11:42:38"
+    "generated_at": "2026-07-15 18:02:32"
   },
   "quote": {
     "name": "腾讯控股",
-    "price": 472.8,
+    "price": 473.8,
     "prev_close": 456.2,
     "open": 467.6,
-    "high": 475.8,
+    "high": 476.4,
     "low": 455.4,
-    "volume": 17524828,
+    "volume": 31849056,
     "amount": 0,
-    "change": 16.6,
-    "change_pct": 3.639
+    "change": 17.6,
+    "change_pct": 3.858
   },
   "fundamentals": {
     "pe_ttm": 17.31,
     "market_cap": 43098.5272,
     "roe": 11.53,
     "high_52w": 411.0,
-    "low_52w": 1.26,
+    "low_52w": 0.89,
     "div_yield": 0.0,
-    "eps_ttm": 4.47
+    "eps_ttm": 4.6
   },
   "tech": {
     "ma5": 463.52,
@@ -32,9 +32,9 @@
     "ma60": 457.96,
     "rsi": 68.2,
     "macd": {
-      "dif": 4.271,
-      "dea": -0.887,
-      "bar": 10.316,
+      "dif": 4.267,
+      "dea": -0.892,
+      "bar": 10.318,
       "signal": "bullish"
     },
     "klines_90d": [
@@ -754,9 +754,9 @@
         "date": "2026-07-15",
         "open": 467.6,
         "close": 474.0,
-        "high": 475.8,
+        "high": 476.4,
         "low": 455.4,
-        "volume": 19037261.0
+        "volume": 33780856.0
       }
     ]
   },
@@ -787,16 +787,16 @@
     "correlations": [
       {
         "name": "恒生指数",
-        "correlation": 0.73,
-        "beta": 1.41
+        "correlation": 0.729,
+        "beta": 1.42
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.044,
+        "correlation": -0.045,
         "beta": 0
       }
     ],
-    "volatility_annual": 39.5,
+    "volatility_annual": 39.7,
     "max_drawdown_90d": 26.3
   },
   "fund_flow": null,
@@ -809,8 +809,8 @@
     "source": "roe_estimation"
   },
   "ma_deviation": {
-    "ma5": 2.0,
-    "ma20": 6.7,
-    "ma60": 3.2
+    "ma5": 2.2,
+    "ma20": 6.9,
+    "ma60": 3.5
   }
 }
