@@ -3,7 +3,7 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-07-16 18:02:03"
+    "generated_at": "2026-07-17 08:02:23"
   },
   "quote": {
     "name": "宁德时代",
@@ -32,9 +32,9 @@
     "ma60": 407.01,
     "rsi": 43.6,
     "macd": {
-      "dif": -10.61,
-      "dea": -10.44,
-      "bar": -0.34,
+      "dif": -10.614,
+      "dea": -10.446,
+      "bar": -0.336,
       "signal": "bearish"
     },
     "klines_90d": [
@@ -787,16 +787,16 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.407,
+        "correlation": 0.406,
         "beta": 1.01
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.197,
+        "correlation": -0.199,
         "beta": 0
       }
     ],
-    "volatility_annual": 41.5,
+    "volatility_annual": 41.7,
     "max_drawdown_90d": 24.2
   },
   "fund_flow": null,
