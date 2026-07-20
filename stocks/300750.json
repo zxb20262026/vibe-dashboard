@@ -3,7 +3,7 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-07-17 18:02:26"
+    "generated_at": "2026-07-20 08:02:13"
   },
   "quote": {
     "name": "宁德时代",
@@ -32,9 +32,9 @@
     "ma60": 405.92,
     "rsi": 35.4,
     "macd": {
-      "dif": -10.714,
-      "dea": -10.732,
-      "bar": 0.036,
+      "dif": -10.717,
+      "dea": -10.736,
+      "bar": 0.038,
       "signal": "bullish"
     },
     "klines_90d": [
@@ -774,7 +774,7 @@
       "peg": 1.19
     },
     "quality": {
-      "score": 49,
+      "score": 48,
       "roe": 22.11
     },
     "composite": {
@@ -787,19 +787,40 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.409,
+        "correlation": 0.411,
         "beta": 0.98
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.192,
+        "correlation": -0.203,
         "beta": 0
       }
     ],
-    "volatility_annual": 41.5,
+    "volatility_annual": 41.7,
     "max_drawdown_90d": 24.2
   },
-  "fund_flow": null,
+  "fund_flow": [
+    {
+      "date": "2026-07-13",
+      "main_inflow": 69266.87
+    },
+    {
+      "date": "2026-07-14",
+      "main_inflow": -49866.0
+    },
+    {
+      "date": "2026-07-15",
+      "main_inflow": 90857.39
+    },
+    {
+      "date": "2026-07-16",
+      "main_inflow": -37498.7
+    },
+    {
+      "date": "2026-07-17",
+      "main_inflow": 43423.95
+    }
+  ],
   "news": null,
   "peg": {
     "value": 0.64,
