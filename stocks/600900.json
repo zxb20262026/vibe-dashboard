@@ -3,7 +3,7 @@
     "code": "600900",
     "market": "A股",
     "api_code": "sh600900",
-    "generated_at": "2026-07-17 18:02:27"
+    "generated_at": "2026-07-20 08:02:14"
   },
   "quote": {
     "name": "XD长江电",
@@ -32,9 +32,9 @@
     "ma60": 26.48,
     "rsi": 76.4,
     "macd": {
-      "dif": 0.381,
+      "dif": 0.38,
       "dea": 0.182,
-      "bar": 0.398,
+      "bar": 0.396,
       "signal": "bullish"
     },
     "klines_90d": [
@@ -787,19 +787,40 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": -0.006,
-        "beta": -0.01
+        "correlation": -0.005,
+        "beta": -0.0
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.016,
+        "correlation": -0.015,
         "beta": 0
       }
     ],
-    "volatility_annual": 14.6,
+    "volatility_annual": 14.7,
     "max_drawdown_90d": 7.5
   },
-  "fund_flow": null,
+  "fund_flow": [
+    {
+      "date": "2026-07-13",
+      "main_inflow": -3797.02
+    },
+    {
+      "date": "2026-07-14",
+      "main_inflow": -34883.21
+    },
+    {
+      "date": "2026-07-15",
+      "main_inflow": 11082.31
+    },
+    {
+      "date": "2026-07-16",
+      "main_inflow": -20074.48
+    },
+    {
+      "date": "2026-07-17",
+      "main_inflow": -11445.17
+    }
+  ],
   "news": null,
   "peg": {
     "value": 5.24,
