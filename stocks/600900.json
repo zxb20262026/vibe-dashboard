@@ -3,49 +3,41 @@
     "code": "600900",
     "market": "A股",
     "api_code": "sh600900",
-    "generated_at": "2026-07-20 08:02:14"
+    "generated_at": "2026-07-21 08:01:35"
   },
   "quote": {
-    "name": "XD长江电",
-    "price": 27.99,
-    "prev_close": 27.45,
-    "open": 27.61,
-    "high": 28.19,
-    "low": 27.35,
-    "volume": 242860129,
-    "amount": 6802221692.0,
-    "change": 0.54,
-    "change_pct": 1.97
+    "name": "长江电力",
+    "price": 28.98,
+    "prev_close": 27.99,
+    "open": 27.75,
+    "high": 28.98,
+    "low": 27.75,
+    "volume": 229266916,
+    "amount": 6567613792.0,
+    "change": 0.99,
+    "change_pct": 3.54
   },
   "fundamentals": {
-    "pe_ttm": 18.98,
-    "pb": 3.28,
-    "market_cap": 6848.65,
+    "pe_ttm": 19.65,
+    "pb": 3.4,
+    "market_cap": 7090.89,
     "roe": 15.83,
-    "high_52w": 1.57,
-    "low_52w": 2326.0,
-    "eps_ttm": 3.06
+    "high_52w": 1.32,
+    "low_52w": -54976.0,
+    "eps_ttm": 4.39
   },
   "tech": {
-    "ma5": 27.74,
-    "ma20": 26.62,
-    "ma60": 26.48,
-    "rsi": 76.4,
+    "ma5": 28.01,
+    "ma20": 26.76,
+    "ma60": 26.53,
+    "rsi": 88.4,
     "macd": {
-      "dif": 0.38,
-      "dea": 0.182,
-      "bar": 0.396,
+      "dif": 0.491,
+      "dea": 0.243,
+      "bar": 0.496,
       "signal": "bullish"
     },
     "klines_90d": [
-      {
-        "date": "2026-03-09",
-        "open": 26.37,
-        "close": 26.41,
-        "high": 26.84,
-        "low": 26.3,
-        "volume": 2075028.0
-      },
       {
         "date": "2026-03-10",
         "open": 26.22,
@@ -757,73 +749,60 @@
         "high": 28.19,
         "low": 27.35,
         "volume": 2428601.0
+      },
+      {
+        "date": "2026-07-20",
+        "open": 27.75,
+        "close": 28.98,
+        "high": 28.98,
+        "low": 27.75,
+        "volume": 2292669.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
-      "score": 80,
-      "mom_5d": 2.75,
-      "mom_20d": 8.19,
-      "mom_60d": 7.45
+      "score": 90,
+      "mom_5d": 4.89,
+      "mom_20d": 10.82,
+      "mom_60d": 10.02
     },
     "value": {
       "score": 52,
-      "pe": 18.98,
-      "pb": 3.28,
-      "peg": 1.5
+      "pe": 19.65,
+      "pb": 3.4,
+      "peg": 1.55
     },
     "quality": {
       "score": 65,
       "roe": 15.83
     },
     "composite": {
-      "score": 66,
-      "signal": "🟡 中性",
-      "color": "#d29922"
+      "score": 70,
+      "signal": "🟢 偏多",
+      "color": "#3fb950"
     }
   },
   "correlation": {
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": -0.005,
-        "beta": -0.0
+        "correlation": 0.031,
+        "beta": 0.03
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.015,
+        "correlation": 0.069,
         "beta": 0
       }
     ],
-    "volatility_annual": 14.7,
+    "volatility_annual": 15.8,
     "max_drawdown_90d": 7.5
   },
-  "fund_flow": [
-    {
-      "date": "2026-07-13",
-      "main_inflow": -3797.02
-    },
-    {
-      "date": "2026-07-14",
-      "main_inflow": -34883.21
-    },
-    {
-      "date": "2026-07-15",
-      "main_inflow": 11082.31
-    },
-    {
-      "date": "2026-07-16",
-      "main_inflow": -20074.48
-    },
-    {
-      "date": "2026-07-17",
-      "main_inflow": -11445.17
-    }
-  ],
+  "fund_flow": null,
   "news": null,
   "peg": {
-    "value": 5.24,
+    "value": 5.43,
     "growth_assumption": 3.6,
     "signal": "🔴 偏高",
     "color": "#f85149",
@@ -836,34 +815,34 @@
       "year": 2025,
       "mark": "A",
       "eps": 1.410107167464,
-      "pe": 19.84955516,
+      "pe": 20.55162946,
       "roe": 15.9
     },
     {
       "year": 2026,
       "mark": "E",
       "eps": 1.461176470588,
-      "pe": 19.149392700722,
+      "pe": 19.826702410394,
       "roe": 15.152352941177
     },
     {
       "year": 2027,
       "mark": "E",
       "eps": 1.514117647059,
-      "pe": 18.493635757007,
+      "pe": 19.147751491178,
       "roe": 14.782352941177
     },
     {
       "year": 2028,
       "mark": "E",
       "eps": 1.550666666667,
-      "pe": 18.043772568699,
+      "pe": 18.681976743154,
       "roe": 14.314666666667
     }
   ],
   "ma_deviation": {
-    "ma5": 0.9,
-    "ma20": 5.1,
-    "ma60": 5.7
+    "ma5": 3.5,
+    "ma20": 8.3,
+    "ma60": 9.2
   }
 }
