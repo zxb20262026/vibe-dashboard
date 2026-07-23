@@ -3,38 +3,38 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-07-23 11:42:34"
+    "generated_at": "2026-07-23 14:28:27"
   },
   "quote": {
     "name": "宁德时代",
-    "price": 380.07,
+    "price": 384.7,
     "prev_close": 372.26,
     "open": 373.0,
-    "high": 381.6,
+    "high": 385.93,
     "low": 366.01,
-    "volume": 19571873,
-    "amount": 7318012024.03,
-    "change": 7.81,
-    "change_pct": 2.1
+    "volume": 30643840,
+    "amount": 11567470616.14,
+    "change": 12.44,
+    "change_pct": 3.34
   },
   "fundamentals": {
-    "pe_ttm": 22.27,
-    "pb": 5.38,
-    "market_cap": 17584.51,
+    "pe_ttm": 22.54,
+    "pb": 5.45,
+    "market_cap": 17798.73,
     "roe": 22.11,
-    "high_52w": 1.0,
-    "low_52w": -17.0,
-    "eps_ttm": 4.19
+    "high_52w": 0.9,
+    "low_52w": 2.0,
+    "eps_ttm": 5.35
   },
   "tech": {
-    "ma5": 374.19,
-    "ma20": 373.9,
-    "ma60": 401.76,
-    "rsi": 50.0,
+    "ma5": 375.12,
+    "ma20": 374.13,
+    "ma60": 401.83,
+    "rsi": 51.7,
     "macd": {
-      "dif": -6.003,
-      "dea": -9.614,
-      "bar": 7.222,
+      "dif": -5.633,
+      "dea": -9.573,
+      "bar": 7.88,
       "signal": "bullish"
     },
     "klines_90d": [
@@ -753,32 +753,32 @@
       {
         "date": "2026-07-23",
         "open": 373.0,
-        "close": 380.07,
-        "high": 381.6,
+        "close": 384.7,
+        "high": 385.93,
         "low": 366.01,
-        "volume": 195719.0
+        "volume": 306438.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
-      "score": 54,
-      "mom_5d": 3.79,
-      "mom_20d": -5.43,
-      "mom_60d": -14.57
+      "score": 57,
+      "mom_5d": 5.05,
+      "mom_20d": -4.28,
+      "mom_60d": -13.53
     },
     "value": {
       "score": 46,
-      "pe": 22.27,
-      "pb": 5.38,
-      "peg": 1.26
+      "pe": 22.54,
+      "pb": 5.45,
+      "peg": 1.27
     },
     "quality": {
       "score": 50,
       "roe": 22.11
     },
     "composite": {
-      "score": 50,
+      "score": 51,
       "signal": "🟡 中性",
       "color": "#d29922"
     }
@@ -787,43 +787,22 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.415,
+        "correlation": 0.416,
         "beta": 0.96
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.272,
+        "correlation": -0.276,
         "beta": 0
       }
     ],
-    "volatility_annual": 40.6,
+    "volatility_annual": 40.9,
     "max_drawdown_90d": 24.2
   },
-  "fund_flow": [
-    {
-      "date": "2026-07-16",
-      "main_inflow": -37498.7
-    },
-    {
-      "date": "2026-07-17",
-      "main_inflow": 43423.95
-    },
-    {
-      "date": "2026-07-20",
-      "main_inflow": 139545.45
-    },
-    {
-      "date": "2026-07-21",
-      "main_inflow": 98422.4
-    },
-    {
-      "date": "2026-07-22",
-      "main_inflow": -36788.84
-    }
-  ],
+  "fund_flow": null,
   "news": null,
   "peg": {
-    "value": 0.68,
+    "value": 0.69,
     "growth_assumption": 32.9,
     "signal": "🟢 低估",
     "color": "#3fb950",
@@ -862,8 +841,8 @@
     }
   ],
   "ma_deviation": {
-    "ma5": 1.6,
-    "ma20": 1.7,
-    "ma60": -5.4
+    "ma5": 2.6,
+    "ma20": 2.8,
+    "ma60": -4.3
   }
 }
