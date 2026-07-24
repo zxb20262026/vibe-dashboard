@@ -3,34 +3,34 @@
     "code": "600900",
     "market": "A股",
     "api_code": "sh600900",
-    "generated_at": "2026-07-23 14:28:28"
+    "generated_at": "2026-07-24 08:02:10"
   },
   "quote": {
     "name": "长江电力",
-    "price": 28.95,
+    "price": 28.94,
     "prev_close": 29.09,
     "open": 29.09,
     "high": 29.17,
     "low": 28.66,
-    "volume": 95532642,
-    "amount": 2757466592.0,
-    "change": -0.14,
-    "change_pct": -0.48
+    "volume": 108155288,
+    "amount": 3122728895.0,
+    "change": -0.15,
+    "change_pct": -0.52
   },
   "fundamentals": {
-    "pe_ttm": 19.63,
+    "pe_ttm": 19.62,
     "pb": 3.4,
-    "market_cap": 7083.55,
+    "market_cap": 7081.1,
     "roe": 15.83,
-    "high_52w": 0.53,
-    "low_52w": -3944.0,
+    "high_52w": 0.52,
+    "low_52w": -3729.0,
     "eps_ttm": 1.75
   },
   "tech": {
     "ma5": 28.75,
     "ma20": 27.23,
     "ma60": 26.67,
-    "rsi": 80.1,
+    "rsi": 79.9,
     "macd": {
       "dif": 0.659,
       "dea": 0.425,
@@ -753,23 +753,23 @@
       {
         "date": "2026-07-23",
         "open": 29.09,
-        "close": 28.95,
+        "close": 28.94,
         "high": 29.17,
         "low": 28.66,
-        "volume": 955230.0
+        "volume": 1081553.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
       "score": 91,
-      "mom_5d": 5.46,
-      "mom_20d": 13.84,
-      "mom_60d": 11.26
+      "mom_5d": 5.43,
+      "mom_20d": 13.8,
+      "mom_60d": 11.22
     },
     "value": {
       "score": 52,
-      "pe": 19.63,
+      "pe": 19.62,
       "pb": 3.4,
       "peg": 1.55
     },
@@ -787,16 +787,16 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.012,
+        "correlation": 0.007,
         "beta": 0.01
       },
       {
         "name": "自相关(1日)",
-        "correlation": 0.005,
+        "correlation": 0.003,
         "beta": 0
       }
     ],
-    "volatility_annual": 15.9,
+    "volatility_annual": 16.0,
     "max_drawdown_90d": 7.5
   },
   "fund_flow": null,
@@ -815,28 +815,28 @@
       "year": 2025,
       "mark": "A",
       "eps": 1.410107167464,
-      "pe": 20.62963771,
+      "pe": 20.52326282,
       "roe": 15.9
     },
     {
       "year": 2026,
       "mark": "E",
       "eps": 1.461176470588,
-      "pe": 19.901959044802,
+      "pe": 19.799336361518,
       "roe": 15.152352941177
     },
     {
       "year": 2027,
       "mark": "E",
       "eps": 1.514117647059,
-      "pe": 19.220431017197,
+      "pe": 19.121322572626,
       "roe": 14.782352941177
     },
     {
       "year": 2028,
       "mark": "E",
       "eps": 1.550666666667,
-      "pe": 18.752888318094,
+      "pe": 18.656190715904,
       "roe": 14.314666666667
     }
   ],
