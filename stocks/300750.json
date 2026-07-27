@@ -3,38 +3,38 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-07-27 11:42:11"
+    "generated_at": "2026-07-27 18:02:09"
   },
   "quote": {
     "name": "宁德时代",
-    "price": 399.9,
+    "price": 400.0,
     "prev_close": 383.01,
     "open": 398.01,
     "high": 403.8,
     "low": 394.0,
-    "volume": 32846607,
-    "amount": 13099885745.18,
-    "change": 16.89,
-    "change_pct": 4.41
+    "volume": 47327210,
+    "amount": 18875798862.66,
+    "change": 16.99,
+    "change_pct": 4.44
   },
   "fundamentals": {
     "pe_ttm": 21.77,
     "pb": 4.88,
-    "market_cap": 18501.99,
+    "market_cap": 18506.62,
     "roe": 22.41,
-    "high_52w": 1.81,
-    "low_52w": -9.0,
+    "high_52w": 1.3,
+    "low_52w": 1121.0,
     "eps_ttm": 2.56
   },
   "tech": {
-    "ma5": 384.67,
+    "ma5": 384.69,
     "ma20": 374.68,
     "ma60": 400.53,
     "rsi": 58.8,
     "macd": {
-      "dif": -2.167,
-      "dea": -7.615,
-      "bar": 10.896,
+      "dif": -2.159,
+      "dea": -7.614,
+      "bar": 10.91,
       "signal": "bullish"
     },
     "klines_90d": [
@@ -753,19 +753,19 @@
       {
         "date": "2026-07-27",
         "open": 398.01,
-        "close": 399.9,
+        "close": 400.0,
         "high": 403.8,
         "low": 394.0,
-        "volume": 328466.0
+        "volume": 473272.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
       "score": 70,
-      "mom_5d": 6.23,
-      "mom_20d": 1.92,
-      "mom_60d": -6.49
+      "mom_5d": 6.26,
+      "mom_20d": 1.95,
+      "mom_60d": -6.47
     },
     "value": {
       "score": 46,
@@ -787,8 +787,8 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.426,
-        "beta": 0.99
+        "correlation": 0.436,
+        "beta": 1.01
       },
       {
         "name": "自相关(1日)",
@@ -803,46 +803,46 @@
   "news": null,
   "peg": {
     "value": 0.66,
-    "growth_assumption": 33.1,
+    "growth_assumption": 33.0,
     "signal": "🟢 低估",
     "color": "#3fb950",
     "source": "analyst_consensus",
     "actual_eps": 15.605504033485,
-    "forecast_eps": 20.767
+    "forecast_eps": 20.753878787879
   },
   "analyst_eps": [
     {
       "year": 2025,
       "mark": "A",
       "eps": 15.605504033485,
-      "pe": 24.54326366,
+      "pe": 25.6319821,
       "roe": 24.91
     },
     {
       "year": 2026,
       "mark": "E",
-      "eps": 20.767,
-      "pe": 18.605155813446,
-      "roe": 23.885806451613
+      "eps": 20.753878787879,
+      "pe": 19.437300600087,
+      "roe": 23.853548387097
     },
     {
       "year": 2027,
       "mark": "E",
-      "eps": 25.6621875,
-      "pe": 15.065410130029,
-      "roe": 24.845483870968
+      "eps": 25.664545454546,
+      "pe": 15.727427165413,
+      "roe": 24.826129032258
     },
     {
       "year": 2028,
       "mark": "E",
-      "eps": 30.905774193548,
-      "pe": 12.514976061937,
-      "roe": 24.980333333333
+      "eps": 30.86984375,
+      "pe": 13.080828156443,
+      "roe": 24.953666666667
     }
   ],
   "ma_deviation": {
     "ma5": 4.0,
-    "ma20": 6.7,
-    "ma60": -0.2
+    "ma20": 6.8,
+    "ma60": -0.1
   }
 }
