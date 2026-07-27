@@ -3,7 +3,7 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-07-24 18:02:49"
+    "generated_at": "2026-07-27 08:01:34"
   },
   "quote": {
     "name": "宁德时代",
@@ -18,9 +18,9 @@
     "change_pct": -0.77
   },
   "fundamentals": {
-    "pe_ttm": 22.44,
-    "pb": 5.42,
-    "market_cap": 17720.54,
+    "pe_ttm": 20.85,
+    "pb": 4.67,
+    "market_cap": 17720.55,
     "roe": 22.11,
     "high_52w": 0.61,
     "low_52w": 996.0,
@@ -32,9 +32,9 @@
     "ma60": 400.99,
     "rsi": 53.0,
     "macd": {
-      "dif": -4.43,
-      "dea": -8.707,
-      "bar": 8.554,
+      "dif": -4.424,
+      "dea": -8.698,
+      "bar": 8.548,
       "signal": "bullish"
     },
     "klines_90d": [
@@ -769,9 +769,9 @@
     },
     "value": {
       "score": 46,
-      "pe": 22.44,
-      "pb": 5.42,
-      "peg": 1.27
+      "pe": 20.85,
+      "pb": 4.67,
+      "peg": 1.18
     },
     "quality": {
       "score": 50,
@@ -787,57 +787,57 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.42,
+        "correlation": 0.425,
         "beta": 0.97
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.283,
+        "correlation": -0.281,
         "beta": 0
       }
     ],
-    "volatility_annual": 41.0,
+    "volatility_annual": 40.9,
     "max_drawdown_90d": 24.2
   },
   "fund_flow": null,
   "news": null,
   "peg": {
-    "value": 0.68,
-    "growth_assumption": 32.9,
+    "value": 0.63,
+    "growth_assumption": 33.1,
     "signal": "🟢 低估",
     "color": "#3fb950",
     "source": "analyst_consensus",
-    "actual_eps": 15.605517720953,
-    "forecast_eps": 20.73535483871
+    "actual_eps": 15.605504033485,
+    "forecast_eps": 20.767
   },
   "analyst_eps": [
     {
       "year": 2025,
       "mark": "A",
-      "eps": 15.605517720953,
-      "pe": 24.54324213,
+      "eps": 15.605504033485,
+      "pe": 24.54326366,
       "roe": 24.91
     },
     {
       "year": 2026,
       "mark": "E",
-      "eps": 20.73535483871,
-      "pe": 18.681416532574,
-      "roe": 23.808333333333
+      "eps": 20.767,
+      "pe": 18.605155813446,
+      "roe": 23.885806451613
     },
     {
       "year": 2027,
       "mark": "E",
-      "eps": 25.629387096774,
-      "pe": 15.124599213651,
-      "roe": 24.773666666667
+      "eps": 25.6621875,
+      "pe": 15.065410130029,
+      "roe": 24.845483870968
     },
     {
       "year": 2028,
       "mark": "E",
-      "eps": 30.830466666667,
-      "pe": 12.574617494201,
-      "roe": 24.890344827586
+      "eps": 30.905774193548,
+      "pe": 12.514976061937,
+      "roe": 24.980333333333
     }
   ],
   "ma_deviation": {
