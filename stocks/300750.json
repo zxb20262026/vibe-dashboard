@@ -3,7 +3,7 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-07-27 18:02:09"
+    "generated_at": "2026-07-28 08:02:02"
   },
   "quote": {
     "name": "宁德时代",
@@ -32,9 +32,9 @@
     "ma60": 400.53,
     "rsi": 58.8,
     "macd": {
-      "dif": -2.159,
-      "dea": -7.614,
-      "bar": 10.91,
+      "dif": -2.152,
+      "dea": -7.604,
+      "bar": 10.904,
       "signal": "bullish"
     },
     "klines_90d": [
@@ -774,11 +774,11 @@
       "peg": 1.21
     },
     "quality": {
-      "score": 51,
+      "score": 50,
       "roe": 22.41
     },
     "composite": {
-      "score": 57,
+      "score": 56,
       "signal": "🟡 中性",
       "color": "#d29922"
     }
@@ -787,16 +787,16 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.436,
+        "correlation": 0.435,
         "beta": 1.01
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.282,
+        "correlation": -0.283,
         "beta": 0
       }
     ],
-    "volatility_annual": 41.4,
+    "volatility_annual": 41.6,
     "max_drawdown_90d": 24.2
   },
   "fund_flow": null,
@@ -808,7 +808,7 @@
     "color": "#3fb950",
     "source": "analyst_consensus",
     "actual_eps": 15.605504033485,
-    "forecast_eps": 20.753878787879
+    "forecast_eps": 20.752666666667
   },
   "analyst_eps": [
     {
@@ -821,22 +821,22 @@
     {
       "year": 2026,
       "mark": "E",
-      "eps": 20.753878787879,
-      "pe": 19.437300600087,
-      "roe": 23.853548387097
+      "eps": 20.752666666667,
+      "pe": 19.430634057701,
+      "roe": 23.86
     },
     {
       "year": 2027,
       "mark": "E",
-      "eps": 25.664545454546,
-      "pe": 15.727427165413,
-      "roe": 24.826129032258
+      "eps": 25.649393939394,
+      "pe": 15.730274957518,
+      "roe": 24.819677419355
     },
     {
       "year": 2028,
       "mark": "E",
-      "eps": 30.86984375,
-      "pe": 13.080828156443,
+      "eps": 30.86078125,
+      "pe": 13.079103468733,
       "roe": 24.953666666667
     }
   ],
