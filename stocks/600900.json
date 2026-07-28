@@ -3,7 +3,7 @@
     "code": "600900",
     "market": "A股",
     "api_code": "sh600900",
-    "generated_at": "2026-07-28 18:01:48"
+    "generated_at": "2026-07-29 00:32:45"
   },
   "quote": {
     "name": "长江电力",
@@ -32,8 +32,8 @@
     "ma60": 26.81,
     "rsi": 70.3,
     "macd": {
-      "dif": 0.659,
-      "dea": 0.557,
+      "dif": 0.66,
+      "dea": 0.558,
       "bar": 0.204,
       "signal": "bullish"
     },
@@ -774,7 +774,7 @@
       "peg": 1.56
     },
     "quality": {
-      "score": 65,
+      "score": 64,
       "roe": 15.83
     },
     "composite": {
@@ -787,59 +787,48 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": -0.036,
+        "correlation": -0.033,
         "beta": -0.03
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.037,
+        "correlation": -0.039,
         "beta": 0
       }
     ],
-    "volatility_annual": 16.7,
+    "volatility_annual": 16.8,
     "max_drawdown_90d": 7.5
   },
-  "fund_flow": null,
-  "news": null,
-  "peg": {
-    "value": 5.44,
-    "growth_assumption": 3.6,
-    "signal": "🔴 偏高",
-    "color": "#f85149",
-    "source": "analyst_consensus",
-    "actual_eps": 1.410107167464,
-    "forecast_eps": 1.461176470588
-  },
-  "analyst_eps": [
+  "fund_flow": [
     {
-      "year": 2025,
-      "mark": "A",
-      "eps": 1.410107167464,
-      "pe": 20.61545439,
-      "roe": 15.9
+      "date": "2026-07-22",
+      "main_inflow": 33670.52
     },
     {
-      "year": 2026,
-      "mark": "E",
-      "eps": 1.461176470588,
-      "pe": 19.888276020364,
-      "roe": 15.152352941177
+      "date": "2026-07-23",
+      "main_inflow": 5172.04
     },
     {
-      "year": 2027,
-      "mark": "E",
-      "eps": 1.514117647059,
-      "pe": 19.207216557921,
-      "roe": 14.782352941177
+      "date": "2026-07-24",
+      "main_inflow": 8110.99
     },
     {
-      "year": 2028,
-      "mark": "E",
-      "eps": 1.550666666667,
-      "pe": 18.739995304469,
-      "roe": 14.314666666667
+      "date": "2026-07-27",
+      "main_inflow": -11673.34
+    },
+    {
+      "date": "2026-07-28",
+      "main_inflow": 34752.53
     }
   ],
+  "news": null,
+  "peg": {
+    "value": 1.56,
+    "growth_assumption": 12.7,
+    "signal": "🔴 偏高",
+    "color": "#f85149",
+    "source": "roe_estimation"
+  },
   "ma_deviation": {
     "ma5": 0.7,
     "ma20": 5.1,
