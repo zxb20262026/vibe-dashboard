@@ -3,38 +3,38 @@
     "code": "600900",
     "market": "A股",
     "api_code": "sh600900",
-    "generated_at": "2026-07-29 11:43:35"
+    "generated_at": "2026-07-29 21:55:19"
   },
   "quote": {
     "name": "长江电力",
-    "price": 28.89,
+    "price": 28.93,
     "prev_close": 29.07,
     "open": 29.5,
     "high": 29.57,
-    "low": 28.76,
-    "volume": 79936178,
-    "amount": 2318309287.0,
-    "change": -0.18,
-    "change_pct": -0.62
+    "low": 28.7,
+    "volume": 131444127,
+    "amount": 3804789457.0,
+    "change": -0.14,
+    "change_pct": -0.48
   },
   "fundamentals": {
-    "pe_ttm": 19.59,
+    "pe_ttm": 19.62,
     "pb": 3.39,
-    "market_cap": 7068.87,
+    "market_cap": 7078.66,
     "roe": 15.83,
-    "high_52w": 1.18,
-    "low_52w": -29.0,
-    "eps_ttm": 2.79
+    "high_52w": 0.97,
+    "low_52w": 1683.0,
+    "eps_ttm": 2.99
   },
   "tech": {
-    "ma5": 28.83,
+    "ma5": 28.84,
     "ma20": 27.82,
     "ma60": 26.85,
-    "rsi": 68.6,
+    "rsi": 69.2,
     "macd": {
-      "dif": 0.654,
+      "dif": 0.657,
       "dea": 0.593,
-      "bar": 0.122,
+      "bar": 0.128,
       "signal": "bullish"
     },
     "klines_90d": [
@@ -753,23 +753,23 @@
       {
         "date": "2026-07-29",
         "open": 29.5,
-        "close": 28.89,
+        "close": 28.93,
         "high": 29.57,
-        "low": 28.76,
-        "volume": 799362.0
+        "low": 28.7,
+        "volume": 1314441.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
-      "score": 66,
-      "mom_5d": -0.69,
-      "mom_20d": 11.76,
-      "mom_60d": 8.9
+      "score": 67,
+      "mom_5d": -0.55,
+      "mom_20d": 11.91,
+      "mom_60d": 9.05
     },
     "value": {
       "score": 52,
-      "pe": 19.59,
+      "pe": 19.62,
       "pb": 3.39,
       "peg": 1.55
     },
@@ -787,43 +787,22 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": -0.029,
+        "correlation": -0.035,
         "beta": -0.03
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.056,
+        "correlation": -0.053,
         "beta": 0
       }
     ],
     "volatility_annual": 16.7,
     "max_drawdown_90d": 7.5
   },
-  "fund_flow": [
-    {
-      "date": "2026-07-22",
-      "main_inflow": 33670.52
-    },
-    {
-      "date": "2026-07-23",
-      "main_inflow": 5172.04
-    },
-    {
-      "date": "2026-07-24",
-      "main_inflow": 8110.99
-    },
-    {
-      "date": "2026-07-27",
-      "main_inflow": -11673.34
-    },
-    {
-      "date": "2026-07-28",
-      "main_inflow": 34752.53
-    }
-  ],
+  "fund_flow": null,
   "news": null,
   "peg": {
-    "value": 5.41,
+    "value": 5.42,
     "growth_assumption": 3.6,
     "signal": "🔴 偏高",
     "color": "#f85149",
@@ -836,34 +815,34 @@
       "year": 2025,
       "mark": "A",
       "eps": 1.410107167464,
-      "pe": 20.61545439,
+      "pe": 20.51617116,
       "roe": 15.9
     },
     {
       "year": 2026,
       "mark": "E",
       "eps": 1.461176470588,
-      "pe": 19.888276020364,
+      "pe": 19.792494849299,
       "roe": 15.152352941177
     },
     {
       "year": 2027,
       "mark": "E",
       "eps": 1.514117647059,
-      "pe": 19.207216557921,
+      "pe": 19.114715342988,
       "roe": 14.782352941177
     },
     {
       "year": 2028,
       "mark": "E",
       "eps": 1.550666666667,
-      "pe": 18.739995304469,
+      "pe": 18.649744209091,
       "roe": 14.314666666667
     }
   ],
   "ma_deviation": {
-    "ma5": 0.2,
-    "ma20": 3.8,
-    "ma60": 7.6
+    "ma5": 0.3,
+    "ma20": 4.0,
+    "ma60": 7.7
   }
 }
