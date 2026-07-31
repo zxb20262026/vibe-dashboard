@@ -3,49 +3,41 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-07-31 08:03:20"
+    "generated_at": "2026-07-31 11:43:49"
   },
   "quote": {
     "name": "宁德时代",
-    "price": 401.88,
-    "prev_close": 396.84,
-    "open": 390.0,
-    "high": 403.8,
-    "low": 389.8,
-    "volume": 45239048,
-    "amount": 18103458993.72,
-    "change": 5.04,
-    "change_pct": 1.27
+    "price": 398.21,
+    "prev_close": 401.88,
+    "open": 395.55,
+    "high": 400.2,
+    "low": 389.0,
+    "volume": 28140833,
+    "amount": 11120376836.44,
+    "change": -3.67,
+    "change_pct": -0.91
   },
   "fundamentals": {
-    "pe_ttm": 21.87,
-    "pb": 4.9,
-    "market_cap": 18593.6,
+    "pe_ttm": 21.68,
+    "pb": 4.86,
+    "market_cap": 18423.8,
     "roe": 22.41,
-    "high_52w": 1.21,
-    "low_52w": -644.0,
-    "eps_ttm": 3.53
+    "high_52w": 1.44,
+    "low_52w": -4.0,
+    "eps_ttm": 2.79
   },
   "tech": {
-    "ma5": 394.52,
-    "ma20": 376.2,
-    "ma60": 398.01,
-    "rsi": 71.6,
+    "ma5": 397.56,
+    "ma20": 377.11,
+    "ma60": 397.12,
+    "rsi": 66.8,
     "macd": {
-      "dif": 1.698,
-      "dea": -3.915,
-      "bar": 11.226,
+      "dif": 2.512,
+      "dea": -2.602,
+      "bar": 10.228,
       "signal": "bullish"
     },
     "klines_90d": [
-      {
-        "date": "2026-03-20",
-        "open": 398.174,
-        "close": 406.094,
-        "high": 415.174,
-        "low": 393.224,
-        "volume": 537297.0
-      },
       {
         "date": "2026-03-23",
         "open": 410.424,
@@ -757,21 +749,29 @@
         "high": 403.8,
         "low": 389.8,
         "volume": 452390.0
+      },
+      {
+        "date": "2026-07-31",
+        "open": 395.55,
+        "close": 398.21,
+        "high": 400.2,
+        "low": 389.0,
+        "volume": 281408.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
       "score": 71,
-      "mom_5d": 4.12,
-      "mom_20d": 5.11,
-      "mom_60d": -12.63
+      "mom_5d": 3.97,
+      "mom_20d": 4.79,
+      "mom_60d": -11.83
     },
     "value": {
       "score": 46,
-      "pe": 21.87,
-      "pb": 4.9,
-      "peg": 1.22
+      "pe": 21.68,
+      "pb": 4.86,
+      "peg": 1.21
     },
     "quality": {
       "score": 51,
@@ -787,22 +787,22 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.462,
-        "beta": 1.07
+        "correlation": 0.457,
+        "beta": 1.06
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.285,
+        "correlation": -0.286,
         "beta": 0
       }
     ],
-    "volatility_annual": 41.5,
+    "volatility_annual": 41.3,
     "max_drawdown_90d": 24.2
   },
   "fund_flow": null,
   "news": null,
   "peg": {
-    "value": 0.66,
+    "value": 0.65,
     "growth_assumption": 33.1,
     "signal": "🟢 低估",
     "color": "#3fb950",
@@ -841,8 +841,8 @@
     }
   ],
   "ma_deviation": {
-    "ma5": 1.9,
-    "ma20": 6.8,
-    "ma60": 1.0
+    "ma5": 0.2,
+    "ma20": 5.6,
+    "ma60": 0.3
   }
 }
