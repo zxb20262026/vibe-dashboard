@@ -3,49 +3,41 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-07-31 18:03:38"
+    "generated_at": "2026-08-03 18:03:55"
   },
   "quote": {
     "name": "宁德时代",
-    "price": 395.3,
-    "prev_close": 401.88,
-    "open": 395.55,
-    "high": 400.2,
-    "low": 389.0,
-    "volume": 39414948,
-    "amount": 15602984033.0,
-    "change": -6.58,
-    "change_pct": -1.64
+    "price": 394.4,
+    "prev_close": 395.3,
+    "open": 392.6,
+    "high": 395.88,
+    "low": 389.6,
+    "volume": 21522258,
+    "amount": 8458002893.67,
+    "change": -0.9,
+    "change_pct": -0.23
   },
   "fundamentals": {
-    "pe_ttm": 21.52,
-    "pb": 4.82,
-    "market_cap": 18289.17,
+    "pe_ttm": 21.47,
+    "pb": 4.81,
+    "market_cap": 18247.53,
     "roe": 22.41,
-    "high_52w": 1.01,
-    "low_52w": 0.0,
-    "eps_ttm": 2.79
+    "high_52w": 0.51,
+    "low_52w": -55.0,
+    "eps_ttm": 1.59
   },
   "tech": {
-    "ma5": 396.98,
-    "ma20": 376.97,
-    "ma60": 397.07,
-    "rsi": 65.2,
+    "ma5": 395.86,
+    "ma20": 377.96,
+    "ma60": 396.36,
+    "rsi": 63.2,
     "macd": {
-      "dif": 2.28,
-      "dea": -2.628,
-      "bar": 9.816,
+      "dif": 2.641,
+      "dea": -1.478,
+      "bar": 8.238,
       "signal": "bullish"
     },
     "klines_90d": [
-      {
-        "date": "2026-03-23",
-        "open": 410.424,
-        "close": 395.084,
-        "high": 410.454,
-        "low": 391.844,
-        "volume": 446141.0
-      },
       {
         "date": "2026-03-24",
         "open": 398.094,
@@ -757,20 +749,28 @@
         "high": 400.2,
         "low": 389.0,
         "volume": 394149.0
+      },
+      {
+        "date": "2026-08-03",
+        "open": 392.6,
+        "close": 394.4,
+        "high": 395.88,
+        "low": 389.6,
+        "volume": 215223.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
-      "score": 66,
-      "mom_5d": 3.21,
-      "mom_20d": 4.03,
-      "mom_60d": -12.47
+      "score": 46,
+      "mom_5d": -1.4,
+      "mom_20d": 5.31,
+      "mom_60d": -9.75
     },
     "value": {
       "score": 46,
-      "pe": 21.52,
-      "pb": 4.82,
+      "pe": 21.47,
+      "pb": 4.81,
       "peg": 1.2
     },
     "quality": {
@@ -778,25 +778,25 @@
       "roe": 22.41
     },
     "composite": {
-      "score": 55,
-      "signal": "🟡 中性",
-      "color": "#d29922"
+      "score": 47,
+      "signal": "🟠 偏空",
+      "color": "#f0883e"
     }
   },
   "correlation": {
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.455,
-        "beta": 1.06
+        "correlation": 0.446,
+        "beta": 1.1
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.287,
+        "correlation": -0.294,
         "beta": 0
       }
     ],
-    "volatility_annual": 41.4,
+    "volatility_annual": 41.1,
     "max_drawdown_90d": 24.2
   },
   "fund_flow": null,
@@ -808,41 +808,41 @@
     "color": "#3fb950",
     "source": "analyst_consensus",
     "actual_eps": 15.605504033485,
-    "forecast_eps": 20.783027777778
+    "forecast_eps": 20.787810810811
   },
   "analyst_eps": [
     {
       "year": 2025,
       "mark": "A",
       "eps": 15.605504033485,
-      "pe": 25.33080631,
+      "pe": 25.27313435,
       "roe": 24.91
     },
     {
       "year": 2026,
       "mark": "E",
-      "eps": 20.783027777778,
-      "pe": 19.089083816853,
-      "roe": 23.783235294118
+      "eps": 20.787810810811,
+      "pe": 19.032412906625,
+      "roe": 23.826571428571
     },
     {
       "year": 2027,
       "mark": "E",
-      "eps": 25.878361111111,
-      "pe": 15.338300461749,
-      "roe": 24.770882352941
+      "eps": 25.887054054054,
+      "pe": 15.290872489753,
+      "roe": 24.794571428571
     },
     {
       "year": 2028,
       "mark": "E",
-      "eps": 31.104171428571,
-      "pe": 12.764234584298,
-      "roe": 24.755454545455
+      "eps": 31.069611111111,
+      "pe": 12.74305295903,
+      "roe": 24.753823529412
     }
   ],
   "ma_deviation": {
     "ma5": -0.4,
-    "ma20": 4.9,
-    "ma60": -0.4
+    "ma20": 4.3,
+    "ma60": -0.5
   }
 }
