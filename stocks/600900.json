@@ -3,7 +3,7 @@
     "code": "600900",
     "market": "A股",
     "api_code": "sh600900",
-    "generated_at": "2026-08-03 18:03:56"
+    "generated_at": "2026-08-04 08:03:19"
   },
   "quote": {
     "name": "长江电力",
@@ -787,27 +787,59 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": -0.13,
-        "beta": -0.13
+        "correlation": -0.157,
+        "beta": -0.16
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.072,
+        "correlation": -0.076,
         "beta": 0
       }
     ],
-    "volatility_annual": 16.9,
+    "volatility_annual": 16.8,
     "max_drawdown_90d": 7.5
   },
   "fund_flow": null,
   "news": null,
   "peg": {
-    "value": 1.56,
-    "growth_assumption": 12.7,
+    "value": 5.44,
+    "growth_assumption": 3.6,
     "signal": "🔴 偏高",
     "color": "#f85149",
-    "source": "roe_estimation"
+    "source": "analyst_consensus",
+    "actual_eps": 1.410107167464,
+    "forecast_eps": 1.461176470588
   },
+  "analyst_eps": [
+    {
+      "year": 2025,
+      "mark": "A",
+      "eps": 1.410107167464,
+      "pe": 20.60127107,
+      "roe": 15.9
+    },
+    {
+      "year": 2026,
+      "mark": "E",
+      "eps": 1.461176470588,
+      "pe": 19.874592995926,
+      "roe": 15.152352941177
+    },
+    {
+      "year": 2027,
+      "mark": "E",
+      "eps": 1.514117647059,
+      "pe": 19.194002098645,
+      "roe": 14.782352941177
+    },
+    {
+      "year": 2028,
+      "mark": "E",
+      "eps": 1.550666666667,
+      "pe": 18.727102290843,
+      "roe": 14.314666666667
+    }
+  ],
   "ma_deviation": {
     "ma5": -0.3,
     "ma20": 2.8,
