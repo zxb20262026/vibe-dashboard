@@ -30,10 +30,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei","PingFang SC
 .input-bar .quick-tag:hover{border-color:#58a6ff;color:#58a6ff}
 
 /* ── 导航条 ── */
-.nav-bar{display:flex;justify-content:center;gap:8px;margin-bottom:12px;flex-wrap:wrap}
-.nav-btn{font-size:0.7em;padding:5px 12px;border-radius:14px;background:#131a26;border:1px solid #1e2d45;color:#8b949e;text-decoration:none;transition:all .2s;display:inline-block}
-.nav-btn:hover{border-color:#58a6ff;color:#58a6ff}
-.nav-btn.active{border-color:#58a6ff;color:#58a6ff;background:rgba(88,166,255,0.1)}
+/* ── 统一导航栏（下拉菜单）── */
+.nav-bar{display:flex;justify-content:center;gap:4px;margin-bottom:12px;flex-wrap:wrap;position:relative;z-index:100}
+.nav-dropdown{position:relative;display:inline-block}
+.nav-dropdown-btn{font-size:0.72em;padding:5px 12px;border-radius:14px;background:#131a26;border:1px solid #1e2d45;color:#8b949e;cursor:pointer;transition:all .2s;display:inline-block;user-select:none}
+.nav-dropdown-btn:hover,.nav-dropdown-btn.active-parent{border-color:#58a6ff;color:#58a6ff}
+.nav-dropdown-btn::after{content:' ▾';font-size:0.7em;opacity:0.6}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#161b22;border:1px solid #30363d;border-radius:8px;padding:6px 0;min-width:170px;box-shadow:0 8px 24px rgba(0,0,0,0.5);margin-top:4px;z-index:200}
+.nav-dropdown:hover .nav-dropdown-menu{display:block}
+.nav-dropdown-item{display:block;padding:7px 16px;font-size:0.78em;color:#c9d1d9;text-decoration:none;white-space:nowrap;transition:background .15s}
+.nav-dropdown-item:hover{background:rgba(88,166,255,0.12);color:#58a6ff}
+.nav-dropdown-item.active{color:#58a6ff;font-weight:600;background:rgba(88,166,255,0.08)}
+.nav-dropdown-item .nav-tag{font-size:0.75em;color:#6e7681;margin-left:6px}
 
 /* ── 分区标题 ── */
 .section-divider{display:flex;align-items:center;gap:10px;margin:20px 0 12px;padding-bottom:10px;border-bottom:1px solid #1e2d45}
@@ -113,10 +121,11 @@ td.center{text-align:center}
     <a class="nav-btn" href="https://zxb20262026.github.io/00700/">🐧 腾讯控股</a>
     <a class="nav-btn" href="https://zxb20262026.github.io/sh300-etf-dashboard/">🎯 ETF雷达</a>
     <a class="nav-btn active" href="index.html">🧬 Vibe-Trading港大看板</a>
+    <a class="nav-btn" href="https://zxb20262026.github.io/catl-qs-report/">🧬 QS</a>
 </div>
 <div class="header">
     <h1>🧬 长江电力 · Vibe-Trading 分析</h1>
-    <div class="sub">A股 | 27.71 | 2026-08-05 11:43:27</div>
+    <div class="sub">A股 | 27.96 | 2026-08-18 08:02:58</div>
     <span class="badge badge-neutral">🟡 中性</span>
 </div>
 <div class="input-bar">
@@ -136,26 +145,26 @@ td.center{text-align:center}
     <span class="sd-line"></span>
 </div>
 <div class="kpi-grid">
-    <div class="kpi-card"><div class="kpi-label">最新价</div><div class="kpi-value" style="color:#3fb950">¥27.71</div><div class="kpi-change" style="color:#3fb950">-2.08%</div><div class="kpi-note">开盘 ¥28.28</div></div>
-    <div class="kpi-card"><div class="kpi-label">PE(TTM)</div><div class="kpi-value" style="color:#58a6ff">18.8</div><div class="kpi-note">PB 3.2x</div></div>
-    <div class="kpi-card"><div class="kpi-label">PEG</div><div class="kpi-value" style="color:#f85149">5.19</div><div class="kpi-change" style="color:#f85149">🔴 偏高</div><div class="kpi-note">增长假设 3.6%</div></div>
+    <div class="kpi-card"><div class="kpi-label">最新价</div><div class="kpi-value" style="color:#3fb950">¥27.96</div><div class="kpi-change" style="color:#3fb950">-0.50%</div><div class="kpi-note">开盘 ¥28.08</div></div>
+    <div class="kpi-card"><div class="kpi-label">PE(TTM)</div><div class="kpi-value" style="color:#58a6ff">19.0</div><div class="kpi-note">PB 3.3x</div></div>
+    <div class="kpi-card"><div class="kpi-label">PEG</div><div class="kpi-value" style="color:#f85149">5.24</div><div class="kpi-change" style="color:#f85149">🔴 偏高</div><div class="kpi-note">增长假设 3.6%</div></div>
     <div class="kpi-card"><div class="kpi-label">ROE</div><div class="kpi-value" style="color:#3fb950">15.8%</div><div class="kpi-note">优秀</div></div>
-    <div class="kpi-card"><div class="kpi-label">总市值</div><div class="kpi-value" style="color:#8b949e">67.8亿</div><div class="kpi-note">52周 1.27 / 37682.00</div></div>
-    <div class="kpi-card"><div class="kpi-label">成交额</div><div class="kpi-value" style="color:#8b949e">26.6亿</div><div class="kpi-note">量 9552.94万手</div></div>
-    <div class="kpi-card"><div class="kpi-label">MA5偏离</div><div class="kpi-value" style="color:#f85149">3.60%</div><div class="kpi-note">MA5 ¥28.73</div></div>
-    <div class="kpi-card"><div class="kpi-label">RSI(14)</div><div class="kpi-value" style="color:#d29922">52.1</div><div class="kpi-note">中性</div></div>
+    <div class="kpi-card"><div class="kpi-label">总市值</div><div class="kpi-value" style="color:#8b949e">68.4亿</div><div class="kpi-note">52周 0.84 / 11259.00</div></div>
+    <div class="kpi-card"><div class="kpi-label">成交额</div><div class="kpi-value" style="color:#8b949e">21.1亿</div><div class="kpi-note">量 7539.80万手</div></div>
+    <div class="kpi-card"><div class="kpi-label">MA5偏离</div><div class="kpi-value" style="color:#f85149">0.60%</div><div class="kpi-note">MA5 ¥28.13</div></div>
+    <div class="kpi-card"><div class="kpi-label">RSI(14)</div><div class="kpi-value" style="color:#d29922">35.4</div><div class="kpi-note">中性</div></div>
     </div>
 <div class="signal-box neutral">
-    🧬 量化综合评分: <b>51/100</b> → 🟡 中性
+    🧬 量化综合评分: <b>53/100</b> → 🟡 中性
     </div>
 <div class="module">
     <div class="module-hdr"><span class="icon">🧬</span><h2>Vibe信号摘要</h2></div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;font-size:0.8em">
-        <div><span style="color:#8b949e">动量:</span> <b>36</b></div>
-        <div><span style="color:#8b949e">价值:</span> <b>58</b></div>
-        <div><span style="color:#8b949e">质量:</span> <b>64</b></div>
+        <div><span style="color:#8b949e">动量:</span> <b>47</b></div>
+        <div><span style="color:#8b949e">价值:</span> <b>52</b></div>
+        <div><span style="color:#8b949e">质量:</span> <b>63</b></div>
     </div>
-    <p style="margin-top:10px;font-size:0.78em;color:#c9d1d9;line-height:1.6">PEG=5.19 合理/偏高</p>
+    <p style="margin-top:10px;font-size:0.78em;color:#c9d1d9;line-height:1.6">PEG=5.24 合理/偏高</p>
 </div>
 <div class="section-divider">
     <span class="sd-icon">🧮</span>
@@ -164,28 +173,28 @@ td.center{text-align:center}
 </div>
 <div class="module">
     <div class="module-hdr"><span class="icon">📏</span><h2>PE Bands 估值区间</h2></div>
-    <table><tr><th>情景</th><th>PE</th><th>目标价(基于EPS ¥2.2)</th></tr><tr><td>清仓</td><td>15x</td><td style="font-weight:600">32.4</td></tr>
-<tr><td>止损</td><td>18x</td><td style="font-weight:600">38.9</td></tr>
-<tr><td>保守</td><td>21x</td><td style="font-weight:600">45.4</td></tr>
-<tr><td>合理</td><td>25x</td><td style="font-weight:600">54.0</td></tr>
-<tr><td>偏高</td><td>30x</td><td style="font-weight:600">64.8</td></tr>
-<tr><td>泡沫</td><td>35x</td><td style="font-weight:600">75.6</td></tr></table>
-    <p style="font-size:0.72em;color:#6e7681;margin-top:4px">当前PE=18.8x · 合理PE区间 20-30x</p>
+    <table><tr><th>情景</th><th>PE</th><th>目标价(基于EPS ¥0.8)</th></tr><tr><td>清仓</td><td>15x</td><td style="font-weight:600">12.8</td></tr>
+<tr><td>止损</td><td>18x</td><td style="font-weight:600">15.3</td></tr>
+<tr><td>保守</td><td>21x</td><td style="font-weight:600">17.8</td></tr>
+<tr><td>合理</td><td>25x</td><td style="font-weight:600">21.2</td></tr>
+<tr><td>偏高</td><td>30x</td><td style="font-weight:600">25.5</td></tr>
+<tr><td>泡沫</td><td>35x</td><td style="font-weight:600">29.8</td></tr></table>
+    <p style="font-size:0.72em;color:#6e7681;margin-top:4px">当前PE=19.0x · 合理PE区间 20-30x</p>
 </div>
 <div class="module">
     <div class="module-hdr"><span class="icon">🧮</span><h2>PEG估值详解</h2></div>
     
     <table>
         <tr><th>指标</th><th>数值</th><th>评估</th></tr>
-        <tr><td>当前股价</td><td style="color:#58a6ff">¥27.71</td><td></td></tr>
-        <tr><td>PE(TTM)</td><td>18.8x</td><td>历史偏低</td></tr>
-        <tr><td>PB</td><td>3.2x</td><td></td></tr>
+        <tr><td>当前股价</td><td style="color:#58a6ff">¥27.96</td><td></td></tr>
+        <tr><td>PE(TTM)</td><td>19.0x</td><td>历史偏低</td></tr>
+        <tr><td>PB</td><td>3.3x</td><td></td></tr>
         <tr><td>ROE</td><td>15.8%</td><td></td></tr>
-        <tr><td>EPS(TTM)</td><td>¥2.2</td><td></td></tr>
-        <tr><td>PEG</td><td style="color:#f85149;font-weight:700">5.19</td><td>🔴 偏高</td></tr>
+        <tr><td>EPS(TTM)</td><td>¥0.8</td><td></td></tr>
+        <tr><td>PEG</td><td style="color:#f85149;font-weight:700">5.24</td><td>🔴 偏高</td></tr>
     </table>
     <div class="signal-box neutral" style="margin-top:12px">
-        PEG=5.19 · 增长假设3.6% · 🔴 偏高
+        PEG=5.24 · 增长假设3.6% · 🔴 偏高
     </div>
     
 </div>
@@ -196,17 +205,17 @@ td.center{text-align:center}
 </div>
 
     <div class="factor-grid" style="grid-template-columns:repeat(4,1fr)">
-        <div class="factor-card"><div class="f-name">MA5</div><div class="f-score" style="font-size:1.3em;color:#f85149">跌破MA5</div><div class="f-detail">28.73</div></div>
-        <div class="factor-card"><div class="f-name">MA20</div><div class="f-score" style="font-size:1.3em;color:#f85149">跌破MA20</div><div class="f-detail">28.38</div></div>
-        <div class="factor-card"><div class="f-name">MA60</div><div class="f-score" style="font-size:1.3em;color:#3fb950">站上MA60</div><div class="f-detail">27.05</div></div>
-        <div class="factor-card"><div class="f-name">MACD</div><div class="f-score" style="font-size:1.3em;color:#f85149">死叉</div><div class="f-detail">DIF0.46 BAR-0.35</div></div>
+        <div class="factor-card"><div class="f-name">MA5</div><div class="f-score" style="font-size:1.3em;color:#58a6ff">贴近MA5</div><div class="f-detail">28.13</div></div>
+        <div class="factor-card"><div class="f-name">MA20</div><div class="f-score" style="font-size:1.3em;color:#f85149">跌破MA20</div><div class="f-detail">28.49</div></div>
+        <div class="factor-card"><div class="f-name">MA60</div><div class="f-score" style="font-size:1.3em;color:#3fb950">站上MA60</div><div class="f-detail">27.31</div></div>
+        <div class="factor-card"><div class="f-name">MACD</div><div class="f-score" style="font-size:1.3em;color:#f85149">死叉</div><div class="f-detail">DIF0.12 BAR-0.25</div></div>
     </div>
     
-<div class="chart-box"><svg id="tech-svg" viewBox="0 0 780 220" style="width:100%;height:auto;max-height:240px" data-prices="26.52,26.46,26.35,26.25,26.09,26.22,25.91,25.69,25.79,25.6,25.61,25.63,25.63,25.76,25.76,25.59,26.05,26.34,26.07,26.16,26.02,25.87,25.94,25.98,26.53,26.41,26.26,26.21,26.22,26.25,26.21,26.15,26.24,26.1,26.46,26.11,25.87,25.77,25.88,26.35,26.45,26.43,26.96,26.98,27.17,27.1,26.93,26.82,26.72,26.84,26.9,27.1,27.49,26.78,26.4,26.21,25.87,26.15,26.08,25.81,25.43,25.86,26.05,25.68,25.85,26.16,26.26,26.4,26.62,27.04,26.98,27.24,27.63,27.76,27.89,27.45,27.99,28.98,28.73,29.09,28.94,28.9,28.35,29.07,28.93,29.49,29.09,29.05,28.3,27.71"></svg></div>
+<div class="chart-box"><svg id="tech-svg" viewBox="0 0 780 220" style="width:100%;height:auto;max-height:240px" data-prices="25.79,25.6,25.61,25.63,25.63,25.76,25.76,25.59,26.05,26.34,26.07,26.16,26.02,25.87,25.94,25.98,26.53,26.41,26.26,26.21,26.22,26.25,26.21,26.15,26.24,26.1,26.46,26.11,25.87,25.77,25.88,26.35,26.45,26.43,26.96,26.98,27.17,27.1,26.93,26.82,26.72,26.84,26.9,27.1,27.49,26.78,26.4,26.21,25.87,26.15,26.08,25.81,25.43,25.86,26.05,25.68,25.85,26.16,26.26,26.4,26.62,27.04,26.98,27.24,27.63,27.76,27.89,27.45,27.99,28.98,28.73,29.09,28.94,28.9,28.35,29.07,28.93,29.49,29.09,29.05,28.3,27.76,27.75,27.75,28.05,28.31,28.02,28.24,28.1,27.96"></svg></div>
 <div class="module">
     <div class="module-hdr"><span class="icon">📝</span><h2>技术面研判</h2></div>
-    <ul style="list-style:none;font-size:0.8em;line-height:1.8"><li><span style="color:#3fb950">✅ 站上MA60(27.05)，中长期趋势偏强</span></li>
-<li>RSI=52.1，中性区间</li>
+    <ul style="list-style:none;font-size:0.8em;line-height:1.8"><li><span style="color:#3fb950">✅ 站上MA60(27.31)，中长期趋势偏强</span></li>
+<li>RSI=35.4，中性区间</li>
 <li><span style="color:#f85149">MACD死叉，短线偏空</span></li></ul>
 </div>
 <div class="section-divider">
@@ -217,32 +226,32 @@ td.center{text-align:center}
 <div class="factor-grid">
     <div class="factor-card">
     <div class="f-name">📈 动量因子</div>
-    <canvas id="gauge-mom" width="80" height="80" class="factor-gauge" data-score="36"></canvas>
-    <div style="font-size:1.3em;font-weight:700;color:#f85149">36</div>
-    <div class="f-detail">5日 4.22%<br>20日 +2.48%</div>
+    <canvas id="gauge-mom" width="80" height="80" class="factor-gauge" data-score="47"></canvas>
+    <div style="font-size:1.3em;font-weight:700;color:#f85149">47</div>
+    <div class="f-detail">5日 0.32%<br>20日 3.52%</div>
 </div>
     <div class="factor-card">
     <div class="f-name">💰 价值因子</div>
-    <canvas id="gauge-val" width="80" height="80" class="factor-gauge" data-score="58"></canvas>
-    <div style="font-size:1.3em;font-weight:700;color:#d29922">58</div>
-    <div class="f-detail">PE 18.8x<br>PB 3.2x<br>PEG 1.48</div>
+    <canvas id="gauge-val" width="80" height="80" class="factor-gauge" data-score="52"></canvas>
+    <div style="font-size:1.3em;font-weight:700;color:#d29922">52</div>
+    <div class="f-detail">PE 19.0x<br>PB 3.3x<br>PEG 1.50</div>
 </div>
     <div class="factor-card">
     <div class="f-name">🏆 质量因子</div>
-    <canvas id="gauge-qual" width="80" height="80" class="factor-gauge" data-score="64"></canvas>
-    <div style="font-size:1.3em;font-weight:700;color:#d29922">64</div>
+    <canvas id="gauge-qual" width="80" height="80" class="factor-gauge" data-score="63"></canvas>
+    <div style="font-size:1.3em;font-weight:700;color:#d29922">63</div>
     <div class="f-detail">ROE 15.8%</div>
 </div>
     <div class="factor-card">
     <div class="f-name">🧬 综合评分</div>
-    <canvas id="gauge-comp" width="80" height="80" class="factor-gauge" data-score="51"></canvas>
-    <div style="font-size:1.3em;font-weight:700;color:#d29922">51</div>
+    <canvas id="gauge-comp" width="80" height="80" class="factor-gauge" data-score="53"></canvas>
+    <div style="font-size:1.3em;font-weight:700;color:#d29922">53</div>
     <div class="f-detail">🟡 中性</div>
 </div>
 </div>
 <div class="signal-box neutral">
-    🧬 Vibe-Trading 综合评分: <b>51/100</b> → 🟡 中性
-    <br><span style="font-size:0.78em;font-weight:400;color:#8b949e">动量20 + 价值18 + 质量13</span>
+    🧬 Vibe-Trading 综合评分: <b>53/100</b> → 🟡 中性
+    <br><span style="font-size:0.78em;font-weight:400;color:#8b949e">动量21 + 价值19 + 质量13</span>
 </div>
 <div class="module" style="margin-top:10px">
     <div class="module-hdr"><span class="icon">📖</span><h2>因子方法论 (Vibe-Trading Alpha Zoo 启发)</h2></div>
@@ -262,18 +271,18 @@ td.center{text-align:center}
     <div class="module-hdr"><span class="icon">🔥</span><h2>相关性分析</h2></div>
     <div class="corr-bar">
     <span class="cb-label">上证指数</span>
-    <div class="cb-track"><div class="cb-fill" style="width:19.0%;background:#d29922"></div></div>
-    <span style="font-size:0.75em;color:#d29922;width:40px;text-align:right">-0.190</span>
+    <div class="cb-track"><div class="cb-fill" style="width:21.9%;background:#d29922"></div></div>
+    <span style="font-size:0.75em;color:#d29922;width:40px;text-align:right">-0.219</span>
 </div><div class="corr-bar">
     <span class="cb-label">自相关(1日)</span>
-    <div class="cb-track"><div class="cb-fill" style="width:1.0999999999999999%;background:#d29922"></div></div>
-    <span style="font-size:0.75em;color:#d29922;width:40px;text-align:right">-0.011</span>
+    <div class="cb-track"><div class="cb-fill" style="width:2.6%;background:#d29922"></div></div>
+    <span style="font-size:0.75em;color:#d29922;width:40px;text-align:right">-0.026</span>
 </div>
 </div>
 <div class="module">
     <div class="module-hdr"><span class="icon">⚠️</span><h2>风险指标</h2></div>
     <div class="kpi-grid" style="grid-template-columns:repeat(2,1fr)">
-        <div class="kpi-card"><div class="kpi-label">年化波动率</div><div class="kpi-value" style="color:#d29922">17.7%</div><div class="kpi-note">近90日日收益标准差年化</div></div>
+        <div class="kpi-card"><div class="kpi-label">年化波动率</div><div class="kpi-value" style="color:#d29922">17.8%</div><div class="kpi-note">近90日日收益标准差年化</div></div>
         <div class="kpi-card"><div class="kpi-label">最大回撤(90日)</div><div class="kpi-value" style="color:#f85149">7.5%</div><div class="kpi-note">低风险</div></div>
     </div>
 </div>
@@ -284,13 +293,13 @@ td.center{text-align:center}
 </div>
 <div class="module">
     <div class="module-hdr"><span class="icon">💰</span><h2>主力资金流向</h2></div>
-    <table><tr><th>日期</th><th>主力净流入(亿)</th></tr><tr><td>2026-07-29</td><td style="color:#f85149;font-weight:600">+9804.29亿</td></tr><tr><td>2026-07-30</td><td style="color:#f85149;font-weight:600">+63639.33亿</td></tr><tr><td>2026-07-31</td><td style="color:#3fb950;font-weight:600">-12341.71亿</td></tr><tr><td>2026-08-03</td><td style="color:#3fb950;font-weight:600">-9131.92亿</td></tr><tr><td>2026-08-04</td><td style="color:#3fb950;font-weight:600">-44375.60亿</td></tr></table>
+    <table><tr><th>日期</th><th>主力净流入(亿)</th></tr><tr><td colspan="2" style="color:#8b949e">暂无主力资金数据 (港股或数据源不可用)</td></tr></table>
 </div>
 <div class="module">
     <div class="module-hdr"><span class="icon">📊</span><h2>今日成交</h2></div>
     <div class="kpi-grid" style="grid-template-columns:repeat(2,1fr)">
-        <div class="kpi-card"><div class="kpi-label">成交额</div><div class="kpi-value">26.6亿</div></div>
-        <div class="kpi-card"><div class="kpi-label">成交量</div><div class="kpi-value">9552.94万手</div></div>
+        <div class="kpi-card"><div class="kpi-label">成交额</div><div class="kpi-value">21.1亿</div></div>
+        <div class="kpi-card"><div class="kpi-label">成交量</div><div class="kpi-value">7539.80万手</div></div>
     </div>
 </div>
 <div class="section-divider">
@@ -308,7 +317,7 @@ td.center{text-align:center}
 
 <div class="footer">
     🤖 Vibe-Trading港大看板 v1.0 · 数据: 新浪/腾讯/东方财富<br>
-    2026-08-05 11:43:27 · 7维度分析<br>
+    2026-08-18 08:02:58 · 7维度分析<br>
     ⚠️ 仅供参考 不构成投资建议
 </div>
 </div>
