@@ -3,105 +3,41 @@
     "code": "00700",
     "market": "港股",
     "api_code": "hk00700",
-    "generated_at": "2026-08-18 08:02:58"
+    "generated_at": "2026-08-27 22:47:31"
   },
   "quote": {
     "name": "腾讯控股",
-    "price": 446.4,
-    "prev_close": 440.0,
-    "open": 444.8,
-    "high": 450.4,
-    "low": 442.6,
-    "volume": 19842808,
+    "price": 448.0,
+    "prev_close": 445.4,
+    "open": 450.8,
+    "high": 451.8,
+    "low": 446.6,
+    "volume": 10760500,
     "amount": 0,
-    "change": 6.4,
-    "change_pct": 1.455
+    "change": 2.6,
+    "change_pct": 0.584
   },
   "fundamentals": {
-    "pe_ttm": 16.32,
-    "market_cap": 40636.2955,
+    "pe_ttm": 16.38,
+    "market_cap": 40763.8912,
     "roe": 11.0,
     "high_52w": 411.0,
-    "low_52w": 0.62,
+    "low_52w": 0.58,
     "div_yield": 0.0,
-    "eps_ttm": 1.77
+    "eps_ttm": 1.17
   },
   "tech": {
-    "ma5": 451.96,
-    "ma20": 463.37,
-    "ma60": 453.37,
-    "rsi": 49.7,
+    "ma5": 446.44,
+    "ma20": 460.89,
+    "ma60": 454.2,
+    "rsi": 33.5,
     "macd": {
-      "dif": -1.027,
-      "dea": 5.327,
-      "bar": -12.708,
+      "dif": -4.584,
+      "dea": -3.393,
+      "bar": -2.382,
       "signal": "bearish"
     },
     "klines_90d": [
-      {
-        "date": "2026-04-08",
-        "open": 504.5,
-        "close": 508.0,
-        "high": 510.0,
-        "low": 501.0,
-        "volume": 32856156.0
-      },
-      {
-        "date": "2026-04-09",
-        "open": 506.5,
-        "close": 508.5,
-        "high": 514.5,
-        "low": 503.0,
-        "volume": 20722763.0
-      },
-      {
-        "date": "2026-04-10",
-        "open": 508.0,
-        "close": 504.5,
-        "high": 514.0,
-        "low": 501.0,
-        "volume": 20671874.0
-      },
-      {
-        "date": "2026-04-13",
-        "open": 498.4,
-        "close": 490.0,
-        "high": 503.0,
-        "low": 487.8,
-        "volume": 21140848.0
-      },
-      {
-        "date": "2026-04-14",
-        "open": 497.4,
-        "close": 493.2,
-        "high": 497.4,
-        "low": 486.2,
-        "volume": 17833779.0
-      },
-      {
-        "date": "2026-04-15",
-        "open": 500.0,
-        "close": 499.0,
-        "high": 510.0,
-        "low": 497.4,
-        "volume": 20288791.0
-      },
-      {
-        "date": "2026-04-16",
-        "open": 506.5,
-        "close": 517.0,
-        "high": 517.0,
-        "low": 504.0,
-        "volume": 22559081.0
-      },
-      {
-        "date": "2026-04-17",
-        "open": 512.0,
-        "close": 510.5,
-        "high": 517.0,
-        "low": 506.0,
-        "volume": 13747249.0
-      },
       {
         "date": "2026-04-20",
         "open": 509.5,
@@ -757,28 +693,92 @@
         "high": 450.4,
         "low": 442.6,
         "volume": 19842808.0
+      },
+      {
+        "date": "2026-08-18",
+        "open": 444.2,
+        "close": 442.4,
+        "high": 446.2,
+        "low": 437.6,
+        "volume": 23218078.0
+      },
+      {
+        "date": "2026-08-19",
+        "open": 438.2,
+        "close": 447.2,
+        "high": 449.4,
+        "low": 438.2,
+        "volume": 19773887.0
+      },
+      {
+        "date": "2026-08-20",
+        "open": 454.6,
+        "close": 451.4,
+        "high": 457.4,
+        "low": 448.8,
+        "volume": 19621298.0
+      },
+      {
+        "date": "2026-08-21",
+        "open": 451.0,
+        "close": 457.0,
+        "high": 457.2,
+        "low": 445.0,
+        "volume": 22326906.0
+      },
+      {
+        "date": "2026-08-24",
+        "open": 450.0,
+        "close": 440.0,
+        "high": 451.4,
+        "low": 438.4,
+        "volume": 29180102.0
+      },
+      {
+        "date": "2026-08-25",
+        "open": 440.0,
+        "close": 442.0,
+        "high": 444.6,
+        "low": 438.0,
+        "volume": 13032108.0
+      },
+      {
+        "date": "2026-08-26",
+        "open": 445.0,
+        "close": 445.4,
+        "high": 450.0,
+        "low": 443.2,
+        "volume": 14643242.0
+      },
+      {
+        "date": "2026-08-27",
+        "open": 450.8,
+        "close": 447.8,
+        "high": 451.8,
+        "low": 446.6,
+        "volume": 11487100.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
-      "score": 19,
-      "mom_5d": -7.27,
-      "mom_20d": -6.57,
-      "mom_60d": -1.93
+      "score": 35,
+      "mom_5d": -0.8,
+      "mom_20d": -5.09,
+      "mom_60d": -7.02
     },
     "value": {
       "score": 52,
-      "pe": 16.32,
+      "pe": 16.38,
       "pb": 3,
-      "peg": 1.85
+      "peg": 1.86
     },
     "quality": {
-      "score": 31,
+      "score": 30,
       "roe": 11.0
     },
     "composite": {
-      "score": 34,
+      "score": 40,
       "signal": "🟠 偏空",
       "color": "#f0883e"
     }
@@ -787,30 +787,30 @@
     "correlations": [
       {
         "name": "恒生指数",
-        "correlation": 0.735,
-        "beta": 1.63
+        "correlation": 0.733,
+        "beta": 1.61
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.024,
+        "correlation": -0.028,
         "beta": 0
       }
     ],
-    "volatility_annual": 39.7,
+    "volatility_annual": 39.2,
     "max_drawdown_90d": 21.2
   },
   "fund_flow": null,
   "news": null,
   "peg": {
-    "value": 1.85,
+    "value": 1.86,
     "growth_assumption": 8.8,
     "signal": "🔴 偏高",
     "color": "#f85149",
     "source": "roe_estimation"
   },
   "ma_deviation": {
-    "ma5": -1.2,
-    "ma20": -3.7,
-    "ma60": -1.5
+    "ma5": 0.3,
+    "ma20": -2.8,
+    "ma60": -1.4
   }
 }
