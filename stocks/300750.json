@@ -3,38 +3,38 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-08-28 11:52:22"
+    "generated_at": "2026-08-28 18:03:22"
   },
   "quote": {
     "name": "宁德时代",
-    "price": 369.9,
+    "price": 368.5,
     "prev_close": 373.0,
     "open": 368.0,
     "high": 371.25,
     "low": 364.13,
-    "volume": 16236213,
-    "amount": 5968049709.29,
-    "change": -3.1,
-    "change_pct": -0.83
+    "volume": 26376977,
+    "amount": 9706623341.77,
+    "change": -4.5,
+    "change_pct": -1.21
   },
   "fundamentals": {
-    "pe_ttm": 20.13,
-    "pb": 4.59,
-    "market_cap": 17114.0,
+    "pe_ttm": 20.06,
+    "pb": 4.57,
+    "market_cap": 17049.22,
     "roe": 22.41,
-    "high_52w": 1.55,
-    "low_52w": -60.0,
+    "high_52w": 1.26,
+    "low_52w": 2051.0,
     "eps_ttm": 1.91
   },
   "tech": {
-    "ma5": 377.3,
-    "ma20": 389.0,
-    "ma60": 385.46,
-    "rsi": 31.5,
+    "ma5": 377.02,
+    "ma20": 388.94,
+    "ma60": 385.44,
+    "rsi": 30.8,
     "macd": {
-      "dif": -2.96,
-      "dea": 0.557,
-      "bar": -7.034,
+      "dif": -3.071,
+      "dea": 0.544,
+      "bar": -7.23,
       "signal": "bearish"
     },
     "klines_90d": [
@@ -753,24 +753,24 @@
       {
         "date": "2026-08-28",
         "open": 368.0,
-        "close": 369.9,
+        "close": 368.5,
         "high": 371.25,
         "low": 364.13,
-        "volume": 162362.0
+        "volume": 263770.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
       "score": 16,
-      "mom_5d": -5.43,
-      "mom_20d": -6.09,
-      "mom_60d": -9.07
+      "mom_5d": -5.79,
+      "mom_20d": -6.45,
+      "mom_60d": -9.41
     },
     "value": {
       "score": 46,
-      "pe": 20.13,
-      "pb": 4.59,
+      "pe": 20.06,
+      "pb": 4.57,
       "peg": 1.12
     },
     "quality": {
@@ -787,16 +787,16 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.449,
+        "correlation": 0.45,
         "beta": 1.06
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.393,
+        "correlation": -0.392,
         "beta": 0
       }
     ],
-    "volatility_annual": 38.1,
+    "volatility_annual": 38.2,
     "max_drawdown_90d": 24.3
   },
   "fund_flow": null,
@@ -808,8 +808,8 @@
     "color": "#d29922"
   },
   "ma_deviation": {
-    "ma5": -2.0,
-    "ma20": -4.9,
-    "ma60": -4.0
+    "ma5": -2.3,
+    "ma20": -5.3,
+    "ma60": -4.4
   }
 }
