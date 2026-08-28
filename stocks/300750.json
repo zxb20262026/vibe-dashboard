@@ -3,7 +3,7 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-08-27 22:47:30"
+    "generated_at": "2026-08-28 08:02:22"
   },
   "quote": {
     "name": "宁德时代",
@@ -32,8 +32,8 @@
     "ma60": 386.08,
     "rsi": 40.1,
     "macd": {
-      "dif": -1.881,
-      "dea": 1.253,
+      "dif": -1.883,
+      "dea": 1.251,
       "bar": -6.268,
       "signal": "bearish"
     },
@@ -774,11 +774,11 @@
       "peg": 1.13
     },
     "quality": {
-      "score": 48,
+      "score": 49,
       "roe": 22.41
     },
     "composite": {
-      "score": 35,
+      "score": 36,
       "signal": "🟠 偏空",
       "color": "#f0883e"
     }
@@ -787,59 +787,26 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.437,
-        "beta": 1.03
+        "correlation": 0.45,
+        "beta": 1.06
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.407,
+        "correlation": -0.396,
         "beta": 0
       }
     ],
-    "volatility_annual": 38.4,
+    "volatility_annual": 38.3,
     "max_drawdown_90d": 24.3
   },
   "fund_flow": null,
   "news": null,
   "peg": {
-    "value": 0.61,
-    "growth_assumption": 33.1,
-    "signal": "🟢 低估",
-    "color": "#3fb950",
-    "source": "analyst_consensus",
-    "actual_eps": 15.605504033485,
-    "forecast_eps": 20.764076923077
+    "value": 1.13,
+    "growth_assumption": 17.9,
+    "signal": "🟡 合理",
+    "color": "#d29922"
   },
-  "analyst_eps": [
-    {
-      "year": 2025,
-      "mark": "A",
-      "eps": 15.605504033485,
-      "pe": 23.90182331,
-      "roe": 24.91
-    },
-    {
-      "year": 2026,
-      "mark": "E",
-      "eps": 20.764076923077,
-      "pe": 18.017447523935,
-      "roe": 23.752702702703
-    },
-    {
-      "year": 2027,
-      "mark": "E",
-      "eps": 25.874641025641,
-      "pe": 14.465516110924,
-      "roe": 24.801351351351
-    },
-    {
-      "year": 2028,
-      "mark": "E",
-      "eps": 31.044894736842,
-      "pe": 12.058729490712,
-      "roe": 24.756666666667
-    }
-  ],
   "ma_deviation": {
     "ma5": -2.2,
     "ma20": -4.4,
