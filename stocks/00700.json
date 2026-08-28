@@ -3,7 +3,7 @@
     "code": "00700",
     "market": "港股",
     "api_code": "hk00700",
-    "generated_at": "2026-08-28 11:42:57"
+    "generated_at": "2026-08-28 11:52:23"
   },
   "quote": {
     "name": "腾讯控股",
@@ -12,30 +12,30 @@
     "open": 444.0,
     "high": 459.8,
     "low": 443.4,
-    "volume": 11963446,
+    "volume": 12153916,
     "amount": 0,
     "change": 8.2,
     "change_pct": 1.831
   },
   "fundamentals": {
-    "pe_ttm": 16.7,
-    "market_cap": 41564.9681,
+    "pe_ttm": 16.73,
+    "market_cap": 41637.7933,
     "roe": 11.0,
     "high_52w": 411.0,
-    "low_52w": 1.72,
+    "low_52w": 1.62,
     "div_yield": 0.0,
     "eps_ttm": 3.66
   },
   "tech": {
-    "ma5": 446.36,
-    "ma20": 459.96,
-    "ma60": 454.04,
-    "rsi": 37.6,
+    "ma5": 446.52,
+    "ma20": 460.0,
+    "ma60": 454.05,
+    "rsi": 38.1,
     "macd": {
-      "dif": -3.733,
-      "dea": -3.691,
-      "bar": -0.084,
-      "signal": "bearish"
+      "dif": -3.669,
+      "dea": -3.684,
+      "bar": 0.03,
+      "signal": "bullish"
     },
     "klines_90d": [
       {
@@ -753,23 +753,23 @@
       {
         "date": "2026-08-28",
         "open": 444.0,
-        "close": 456.6,
+        "close": 457.4,
         "high": 459.8,
         "low": 443.4,
-        "volume": 12469668.0
+        "volume": 12668040.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
-      "score": 43,
-      "mom_5d": -0.09,
-      "mom_20d": -3.91,
-      "mom_60d": -2.1
+      "score": 44,
+      "mom_5d": 0.09,
+      "mom_20d": -3.75,
+      "mom_60d": -1.93
     },
     "value": {
       "score": 52,
-      "pe": 16.7,
+      "pe": 16.73,
       "pb": 3,
       "peg": 1.9
     },
@@ -792,7 +792,7 @@
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.026,
+        "correlation": -0.025,
         "beta": 0
       }
     ],
@@ -808,7 +808,7 @@
     "color": "#f85149"
   },
   "ma_deviation": {
-    "ma5": 2.2,
+    "ma5": 2.1,
     "ma20": -0.9,
     "ma60": 0.4
   }
