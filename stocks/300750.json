@@ -3,73 +3,41 @@
     "code": "300750",
     "market": "A股",
     "api_code": "sz300750",
-    "generated_at": "2026-10-07 13:19:47"
+    "generated_at": "2026-10-13 19:32:48"
   },
   "quote": {
     "name": "宁德时代",
-    "price": 291.11,
-    "prev_close": 286.8,
-    "open": 290.0,
-    "high": 292.7,
-    "low": 285.8,
-    "volume": 29699471,
-    "amount": 8613929784.25,
-    "change": 4.31,
-    "change_pct": 1.5
+    "price": 289.1,
+    "prev_close": 298.38,
+    "open": 297.9,
+    "high": 297.99,
+    "low": 286.7,
+    "volume": 40883532,
+    "amount": 11907241158.06,
+    "change": -9.28,
+    "change_pct": -3.11
   },
   "fundamentals": {
-    "pe_ttm": 15.85,
-    "pb": 3.61,
-    "market_cap": 13470.39,
+    "pe_ttm": 15.74,
+    "pb": 3.59,
+    "market_cap": 13377.38,
     "roe": 22.41,
-    "high_52w": 0.91,
-    "low_52w": 200.0,
-    "eps_ttm": 2.41
+    "high_52w": 1.06,
+    "low_52w": 371.0,
+    "eps_ttm": 3.78
   },
   "tech": {
-    "ma5": 292.88,
-    "ma20": 318.46,
-    "ma60": 360.61,
-    "rsi": 23.1,
+    "ma5": 292.62,
+    "ma20": 307.21,
+    "ma60": 356.17,
+    "rsi": 31.6,
     "macd": {
-      "dif": -20.873,
-      "dea": -20.317,
-      "bar": -1.112,
-      "signal": "bearish"
+      "dif": -17.8,
+      "dea": -20.046,
+      "bar": 4.492,
+      "signal": "bullish"
     },
     "klines_90d": [
-      {
-        "date": "2026-05-26",
-        "open": 404.788,
-        "close": 401.098,
-        "high": 407.368,
-        "low": 398.958,
-        "volume": 350627.0
-      },
-      {
-        "date": "2026-05-27",
-        "open": 412.518,
-        "close": 413.398,
-        "high": 427.498,
-        "low": 409.888,
-        "volume": 533729.0
-      },
-      {
-        "date": "2026-05-28",
-        "open": 418.598,
-        "close": 414.278,
-        "high": 419.178,
-        "low": 404.798,
-        "volume": 327771.0
-      },
-      {
-        "date": "2026-05-29",
-        "open": 421.598,
-        "close": 422.598,
-        "high": 429.458,
-        "low": 415.148,
-        "volume": 498119.0
-      },
       {
         "date": "2026-06-01",
         "open": 430.698,
@@ -757,20 +725,52 @@
         "high": 292.7,
         "low": 285.8,
         "volume": 296995.0
+      },
+      {
+        "date": "2026-10-08",
+        "open": 292.0,
+        "close": 286.75,
+        "high": 293.47,
+        "low": 285.17,
+        "volume": 366825.0
+      },
+      {
+        "date": "2026-10-09",
+        "open": 292.0,
+        "close": 297.75,
+        "high": 301.42,
+        "low": 289.0,
+        "volume": 541527.0
+      },
+      {
+        "date": "2026-10-12",
+        "open": 300.27,
+        "close": 298.38,
+        "high": 306.71,
+        "low": 297.57,
+        "volume": 417064.0
+      },
+      {
+        "date": "2026-10-13",
+        "open": 297.9,
+        "close": 289.1,
+        "high": 297.99,
+        "low": 286.7,
+        "volume": 408835.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
-      "score": 4,
-      "mom_5d": -4.44,
-      "mom_20d": -18.71,
-      "mom_60d": -21.55
+      "score": 29,
+      "mom_5d": 0.8,
+      "mom_20d": -16.97,
+      "mom_60d": -19.17
     },
     "value": {
       "score": 64,
-      "pe": 15.85,
-      "pb": 3.61,
+      "pe": 15.74,
+      "pb": 3.59,
       "peg": 0.88
     },
     "quality": {
@@ -778,7 +778,7 @@
       "roe": 22.41
     },
     "composite": {
-      "score": 36,
+      "score": 46,
       "signal": "🟠 偏空",
       "color": "#f0883e"
     }
@@ -787,19 +787,40 @@
     "correlations": [
       {
         "name": "上证指数",
-        "correlation": 0.423,
-        "beta": 1.0
+        "correlation": 0.451,
+        "beta": 1.08
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.308,
+        "correlation": -0.317,
         "beta": 0
       }
     ],
-    "volatility_annual": 37.8,
+    "volatility_annual": 37.9,
     "max_drawdown_90d": 33.7
   },
-  "fund_flow": null,
+  "fund_flow": [
+    {
+      "date": "2026-09-30",
+      "main_inflow": 22941.29
+    },
+    {
+      "date": "2026-10-08",
+      "main_inflow": -30317.31
+    },
+    {
+      "date": "2026-10-09",
+      "main_inflow": 260979.2
+    },
+    {
+      "date": "2026-10-12",
+      "main_inflow": 81349.21
+    },
+    {
+      "date": "2026-10-13",
+      "main_inflow": -71405.42
+    }
+  ],
   "news": null,
   "peg": {
     "value": 0.88,
@@ -808,8 +829,8 @@
     "color": "#3fb950"
   },
   "ma_deviation": {
-    "ma5": -0.6,
-    "ma20": -8.6,
-    "ma60": -19.3
+    "ma5": -1.2,
+    "ma20": -5.9,
+    "ma60": -18.8
   }
 }
