@@ -3,73 +3,41 @@
     "code": "00700",
     "market": "港股",
     "api_code": "hk00700",
-    "generated_at": "2026-10-07 13:19:48"
+    "generated_at": "2026-10-13 19:32:49"
   },
   "quote": {
     "name": "腾讯控股",
-    "price": 420.0,
-    "prev_close": 428.2,
-    "open": 425.6,
-    "high": 426.0,
-    "low": 419.6,
-    "volume": 5983271,
+    "price": 424.0,
+    "prev_close": 425.8,
+    "open": 421.0,
+    "high": 425.6,
+    "low": 419.8,
+    "volume": 10897035,
     "amount": 0,
-    "change": -8.2,
-    "change_pct": -1.915
+    "change": -1.8,
+    "change_pct": -0.423
   },
   "fundamentals": {
-    "pe_ttm": 15.35,
-    "market_cap": 38207.1287,
+    "pe_ttm": 15.53,
+    "market_cap": 38661.8227,
     "roe": 11.0,
     "high_52w": 411.0,
-    "low_52w": 0.82,
+    "low_52w": 0.73,
     "div_yield": 0.0,
-    "eps_ttm": 1.59
+    "eps_ttm": 1.36
   },
   "tech": {
-    "ma5": 424.72,
-    "ma20": 431.44,
-    "ma60": 448.4,
-    "rsi": 43.3,
+    "ma5": 421.56,
+    "ma20": 429.89,
+    "ma60": 444.91,
+    "rsi": 32.5,
     "macd": {
-      "dif": -4.987,
-      "dea": -3.722,
-      "bar": -2.53,
+      "dif": -5.012,
+      "dea": -4.754,
+      "bar": -0.516,
       "signal": "bearish"
     },
     "klines_90d": [
-      {
-        "date": "2026-06-01",
-        "open": 432.4,
-        "close": 436.0,
-        "high": 442.0,
-        "low": 430.0,
-        "volume": 35164391.0
-      },
-      {
-        "date": "2026-06-02",
-        "open": 438.0,
-        "close": 481.6,
-        "high": 484.8,
-        "low": 437.4,
-        "volume": 101874275.0
-      },
-      {
-        "date": "2026-06-03",
-        "open": 484.0,
-        "close": 466.4,
-        "high": 484.0,
-        "low": 461.6,
-        "volume": 49104320.0
-      },
-      {
-        "date": "2026-06-04",
-        "open": 462.6,
-        "close": 459.0,
-        "high": 468.6,
-        "low": 454.8,
-        "volume": 29053909.0
-      },
       {
         "date": "2026-06-05",
         "open": 461.6,
@@ -753,32 +721,64 @@
       {
         "date": "2026-10-07",
         "open": 425.6,
-        "close": 420.2,
+        "close": 420.6,
         "high": 426.0,
         "low": 419.2,
-        "volume": 6615028.0
+        "volume": 12436640.0
+      },
+      {
+        "date": "2026-10-08",
+        "open": 422.0,
+        "close": 411.4,
+        "high": 424.6,
+        "low": 411.2,
+        "volume": 30202875.0
+      },
+      {
+        "date": "2026-10-09",
+        "open": 415.0,
+        "close": 424.8,
+        "high": 425.8,
+        "low": 414.8,
+        "volume": 20422500.0
+      },
+      {
+        "date": "2026-10-12",
+        "open": 428.4,
+        "close": 425.8,
+        "high": 430.4,
+        "low": 423.4,
+        "volume": 14011738.0
+      },
+      {
+        "date": "2026-10-13",
+        "open": 421.0,
+        "close": 425.2,
+        "high": 425.6,
+        "low": 419.8,
+        "volume": 12724935.0
       }
     ]
   },
   "alpha_factors": {
     "momentum": {
-      "score": 27,
-      "mom_5d": -2.73,
-      "mom_20d": -3.49,
-      "mom_60d": -7.89
+      "score": 39,
+      "mom_5d": -0.7,
+      "mom_20d": -1.25,
+      "mom_60d": -11.01
     },
     "value": {
       "score": 52,
-      "pe": 15.35,
+      "pe": 15.53,
       "pb": 3,
-      "peg": 1.74
+      "peg": 1.76
     },
     "quality": {
-      "score": 25,
+      "score": 31,
       "roe": 11.0
     },
     "composite": {
-      "score": 35,
+      "score": 42,
       "signal": "🟠 偏空",
       "color": "#f0883e"
     }
@@ -787,29 +787,29 @@
     "correlations": [
       {
         "name": "恒生指数",
-        "correlation": 0.719,
-        "beta": 1.62
+        "correlation": 0.702,
+        "beta": 1.46
       },
       {
         "name": "自相关(1日)",
-        "correlation": -0.022,
+        "correlation": -0.027,
         "beta": 0
       }
     ],
-    "volatility_annual": 39.2,
-    "max_drawdown_90d": 14.9
+    "volatility_annual": 35.1,
+    "max_drawdown_90d": 16.4
   },
   "fund_flow": null,
   "news": null,
   "peg": {
-    "value": 1.74,
+    "value": 1.76,
     "growth_assumption": 8.8,
     "signal": "🔴 偏高",
     "color": "#f85149"
   },
   "ma_deviation": {
-    "ma5": -1.1,
-    "ma20": -2.7,
-    "ma60": -6.3
+    "ma5": 0.6,
+    "ma20": -1.4,
+    "ma60": -4.7
   }
 }
